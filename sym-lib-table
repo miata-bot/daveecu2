@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name speeduino_connector_automotive)(type Legacy)(uri ${KIPRJMOD}/kicad-parts/Connector_Automotive/Connector_Automotive.lib)(options "")(descr ""))
+  (lib (name speeduino_ic_automotive)(type Legacy)(uri ${KIPRJMOD}/kicad-parts/IC_Automotive/IC_Automotive.lib)(options "")(descr ""))
+  (lib (name speeduino_misc)(type Legacy)(uri ${KIPRJMOD}/kicad-parts/Misc/Misc.lib)(options "")(descr ""))
+)

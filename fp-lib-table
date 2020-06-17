@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name speeduino_connector_automotive)(type KiCad)(uri ${KIPRJMOD}/kicad-parts/Connector_Automotive/Connector_Automotive.pretty)(options "")(descr ""))
+  (lib (name speeduino_ic_automotive)(type KiCad)(uri ${KIPRJMOD}/kicad-parts/IC_Automotive/IC_Automotive.pretty)(options "")(descr ""))
+  (lib (name speeduino_misc)(type KiCad)(uri ${KIPRJMOD}/kicad-parts/Misc/Misc.pretty)(options "")(descr ""))
+)
