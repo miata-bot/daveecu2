@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -16,124 +16,573 @@ $EndDescr
 $Comp
 L speeduino_connector_automotive:174518-7 J?
 U 1 1 5EE9FF1C
-P 10700 5400
-F 0 "J?" V 11154 1973 50  0000 R CNN
-F 1 "174518-7" V 11245 1973 50  0000 R CNN
-F 2 "1745187" H 11550 5500 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/174518-7.pdf" H 11550 5400 50  0001 L CNN
-F 4 "Conn Wire to Board RCP 64 POS Solder RA Thru-Hole Automotive Tube" H 11550 5300 50  0001 L CNN "Description"
-F 5 "21.9" H 11550 5200 50  0001 L CNN "Height"
-F 6 "571-174518-7" H 11550 5100 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=571-174518-7" H 11550 5000 50  0001 L CNN "Mouser Price/Stock"
-F 8 "TE Connectivity" H 11550 4900 50  0001 L CNN "Manufacturer_Name"
-F 9 "174518-7" H 11550 4800 50  0001 L CNN "Manufacturer_Part_Number"
-	1    10700 5400
-	0    1    1    0   
+P 11000 4750
+F 0 "J?" V 11454 1323 50  0000 R CNN
+F 1 "174518-7" V 11545 1323 50  0000 R CNN
+F 2 "1745187" H 11850 4850 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/174518-7.pdf" H 11850 4750 50  0001 L CNN
+F 4 "Conn Wire to Board RCP 64 POS Solder RA Thru-Hole Automotive Tube" H 11850 4650 50  0001 L CNN "Description"
+F 5 "21.9" H 11850 4550 50  0001 L CNN "Height"
+F 6 "571-174518-7" H 11850 4450 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=571-174518-7" H 11850 4350 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TE Connectivity" H 11850 4250 50  0001 L CNN "Manufacturer_Name"
+F 9 "174518-7" H 11850 4150 50  0001 L CNN "Manufacturer_Part_Number"
+	1    11000 4750
+	-1   0    0    1   
 $EndComp
 $Comp
 L MCU_Microchip_ATmega:ATmega2560-16AU U?
 U 1 1 5EEA0C8E
-P 1950 3800
-F 0 "U?" H 1950 811 50  0000 C CNN
-F 1 "ATmega2560-16AU" H 1950 720 50  0000 C CNN
-F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 1950 3800 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf" H 1950 3800 50  0001 C CNN
-	1    1950 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L speeduino_ic_automotive:TC4424A U?
-U 1 1 5EEA5A43
-P 5100 4000
-F 0 "U?" H 4475 5615 50  0000 C CNN
-F 1 "TC4424A" H 4475 5524 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4700 3550 50  0001 C CNN
-F 3 "" H 5100 4000 50  0001 C CNN
-	1    5100 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L speeduino_ic_automotive:SP720 U?
-U 1 1 5EEA7550
-P 4400 4150
-F 0 "U?" H 4400 4817 50  0000 C CNN
-F 1 "SP720" H 4400 4726 50  0000 C CNN
-F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 4450 3600 50  0001 L CNN
-F 3 "https://m.littelfuse.com/~/media/electronics/datasheets/tvs_diode_arrays/littelfuse_tvs_diode_array_sp720_datasheet.pdf.pdf" H 4500 3950 50  0001 C CNN
-	1    4400 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L speeduino_misc:MPX4250 U?
-U 1 1 5EEA80A1
-P 6200 2950
-F 0 "U?" H 6175 3247 60  0000 C CNN
-F 1 "MPX4250" H 6175 3141 60  0000 C CNN
-F 2 "" H 6150 2950 60  0000 C CNN
-F 3 "" H 6150 2950 60  0000 C CNN
-	1    6200 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L speeduino_ic_automotive:VNLD5090 U?
-U 1 1 5EEAA849
-P 6150 1500
-F 0 "U?" H 6250 2067 50  0000 C CNN
-F 1 "VNLD5090" H 6250 1976 50  0000 C CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 6350 800 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/vnld5090-e.pdf" H 6150 1500 50  0001 C CNN
-	1    6150 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L speeduino_ic_automotive:VNLD5090 U?
-U 1 1 5EEAC1FE
-P 7600 1500
-F 0 "U?" H 7700 2067 50  0000 C CNN
-F 1 "VNLD5090" H 7700 1976 50  0000 C CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7800 800 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/vnld5090-e.pdf" H 7600 1500 50  0001 C CNN
-	1    7600 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L speeduino_ic_automotive:VNLD5090 U?
-U 1 1 5EEACEAE
-P 9100 1500
-F 0 "U?" H 9200 2067 50  0000 C CNN
-F 1 "VNLD5090" H 9200 1976 50  0000 C CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 9300 800 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/vnld5090-e.pdf" H 9100 1500 50  0001 C CNN
-	1    9100 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L speeduino_ic_automotive:MC33814 U?
-U 1 1 5EEAD710
-P 9000 3800
-F 0 "U?" H 10144 3846 50  0000 L CNN
-F 1 "MC33814" H 10144 3755 50  0000 L CNN
-F 2 "Package_QFP:LQFP-48-1EP_7x7mm_P0.5mm_EP3.6x3.6mm_ThermalVias" H 9000 3800 50  0001 C CNN
-F 3 "" H 9000 3800 50  0001 C CNN
-	1    9000 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L speeduino_ic_automotive:VNLD5090 U?
-U 1 1 5EEB29BD
-P 10400 1450
-F 0 "U?" H 10500 2017 50  0000 C CNN
-F 1 "VNLD5090" H 10500 1926 50  0000 C CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 10600 750 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/vnld5090-e.pdf" H 10400 1450 50  0001 C CNN
-	1    10400 1450
+P 5150 4050
+F 0 "U?" H 5150 1061 50  0000 C CNN
+F 1 "ATmega2560-16AU" H 5150 970 50  0000 C CNN
+F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 5150 4050 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf" H 5150 4050 50  0001 C CNN
+F 4 "C22460" H 5150 4050 50  0001 C CNN "LCSC_PN"
+F 5 "TQFP-100_14.0x14.0x0.5P" H 5150 4050 50  0001 C CNN "LCSC_FP"
+	1    5150 4050
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 3300 1050 2250 1150
+S 2450 4950 1050 550 
+U 5EEDB4C5
+F0 "Injectors" 50
+F1 "Injectors.sch" 50
+F2 "CPU-D8" I R 3500 5450 50 
+F3 "CPU-D9" I R 3500 5350 50 
+F4 "CPU-D10" I R 3500 5250 50 
+F5 "CPU-D11" I R 3500 5150 50 
+F6 "INJ-1-OUT" O L 2450 5350 50 
+F7 "INJ-2-OUT" O L 2450 5450 50 
+F8 "INJ-3-OUT" O L 2450 5250 50 
+F9 "INJ-4-OUT" O L 2450 5150 50 
+F10 "12v-SW" I L 2450 5050 50 
+$EndSheet
+$Sheet
+S 7050 3200 1050 350 
 U 5EF12BA4
 F0 "FuelPump" 50
 F1 "FuelPump.sch" 50
-F2 "12V-SW" I L 3300 1200 50 
+F2 "CPU-D37" I L 7050 3250 50 
+F3 "12v-SW" I R 8100 3350 50 
+F4 "ST_Sig" I R 8100 3250 50 
+F5 "VPROT" I R 8100 3450 50 
 $EndSheet
+$Sheet
+S 2450 6600 1050 350 
+U 5EF927DD
+F0 "IDLE+BOOST" 50
+F1 "IDLE+BOOST.sch" 50
+F2 "12v-SW" I L 2450 6700 50 
+F3 "IDLE-OUT" O L 2450 6800 50 
+F4 "BOOST-OUT" O L 2450 6900 50 
+F5 "CPU-D2" I R 3500 6900 50 
+F6 "CPU-D4" I R 3500 6800 50 
+$EndSheet
+$Sheet
+S 7050 3750 1050 350 
+U 5EFA5E54
+F0 "FAN+TACH" 50
+F1 "FAN+TACH.sch" 50
+F2 "12v-SW" I R 8100 4050 50 
+F3 "CPU-D35" I L 7050 3800 50 
+F4 "CPU-D49" I L 7050 3900 50 
+F5 "FAN-OUT" O R 8100 3800 50 
+F6 "TACH-OUT" O R 8100 3900 50 
+$EndSheet
+$Sheet
+S 2450 5800 1050 550 
+U 5EFC1D36
+F0 "Ignitors" 50
+F1 "Ignitors.sch" 50
+F2 "CPU-D39" I R 3500 6300 50 
+F3 "CPU-D41" I R 3500 6200 50 
+F4 "IGN-1-OUT" O L 2450 6300 50 
+F5 "IGN-2-OUT" O L 2450 6200 50 
+F6 "5v" I L 2450 5850 50 
+$EndSheet
+$Sheet
+S 7050 4850 1000 1450
+U 5EFFD74E
+F0 "Sensors" 50
+F1 "Sensors.sch" 50
+F2 "5v" I R 8050 6100 50 
+F3 "IAT-IN" I R 8050 4900 50 
+F4 "VPROT" I R 8050 6200 50 
+F5 "IAT-CPU-A0" I L 7050 4900 50 
+F6 "CLT-IN" I R 8050 5000 50 
+F7 "CLT-CPU-A1" I L 7050 5000 50 
+F8 "TPS-IN" I R 8050 5100 50 
+F9 "TPS-CPU-A2" I L 7050 5100 50 
+F10 "O2-IN" I R 8050 5200 50 
+F11 "O2-CPU-A3" I L 7050 5200 50 
+F12 "VBAT" I R 8050 5300 50 
+F13 "BRV-CPU-A4" I L 7050 5300 50 
+F14 "MAP-CPU-A5" I L 7050 5400 50 
+F15 "CAM-IN" I R 8050 5550 50 
+F16 "CPU-D18" I L 7050 5500 50 
+F17 "CPU-D19" I L 7050 5600 50 
+F18 "CRANK-IN" I R 8050 5650 50 
+F19 "CPU-D3" I L 7050 5700 50 
+F20 "FLEX-IN" I R 8050 5750 50 
+F21 "CLUTCH-IN" I R 8050 5850 50 
+F22 "CPU-D12" I L 7050 5800 50 
+$EndSheet
+Wire Wire Line
+	4350 5950 3850 5950
+Wire Wire Line
+	4350 6150 3950 6150
+Wire Wire Line
+	3950 6150 3950 6300
+Wire Wire Line
+	5950 5950 6500 5950
+Wire Wire Line
+	6500 4900 7050 4900
+Wire Wire Line
+	5950 6050 6550 6050
+Wire Wire Line
+	6550 6050 6550 5000
+Wire Wire Line
+	6550 5000 7050 5000
+Wire Wire Line
+	5950 6150 6650 6150
+Wire Wire Line
+	6650 6150 6650 5100
+Wire Wire Line
+	6650 5100 7050 5100
+Wire Wire Line
+	5950 6250 6750 6250
+Wire Wire Line
+	6750 6250 6750 5200
+Wire Wire Line
+	6750 5200 7050 5200
+Wire Wire Line
+	5950 6350 6850 6350
+Wire Wire Line
+	6850 6350 6850 5300
+Wire Wire Line
+	6850 5300 7050 5300
+Wire Wire Line
+	7050 5400 6900 5400
+Wire Wire Line
+	6900 5400 6900 6450
+Wire Wire Line
+	6900 6450 5950 6450
+Wire Wire Line
+	7050 5500 6300 5500
+Wire Wire Line
+	6300 5500 6300 4450
+Wire Wire Line
+	6300 4450 5950 4450
+Wire Wire Line
+	5950 4350 6200 4350
+Wire Wire Line
+	6200 4350 6200 5600
+Wire Wire Line
+	6200 5600 7050 5600
+Wire Wire Line
+	5950 5550 6150 5550
+Wire Wire Line
+	6150 5550 6150 5700
+Wire Wire Line
+	6150 5700 7050 5700
+Wire Wire Line
+	5950 2950 6100 2950
+Wire Wire Line
+	6100 2950 6100 5800
+Wire Wire Line
+	6100 5800 7050 5800
+Wire Wire Line
+	4350 5550 3850 5550
+Wire Wire Line
+	3850 5450 3500 5450
+Wire Wire Line
+	4350 5650 3900 5650
+Wire Wire Line
+	3900 5650 3900 5350
+Wire Wire Line
+	3900 5350 3500 5350
+Wire Wire Line
+	3500 5250 3750 5250
+Wire Wire Line
+	3750 5250 3750 7500
+Wire Wire Line
+	3750 7500 6450 7500
+Wire Wire Line
+	6450 7500 6450 2750
+Wire Wire Line
+	6450 2750 5950 2750
+Wire Wire Line
+	3850 5950 3850 6200
+Wire Wire Line
+	3850 5550 3850 5450
+Wire Wire Line
+	6500 5950 6500 4900
+Wire Wire Line
+	6600 2850 6600 7550
+Wire Wire Line
+	6600 7550 3800 7550
+Wire Wire Line
+	3800 7550 3800 5150
+Wire Wire Line
+	3800 5150 3500 5150
+Wire Wire Line
+	5950 2850 6600 2850
+Wire Wire Line
+	6200 3800 6200 3450
+Wire Wire Line
+	6200 3450 5950 3450
+Wire Wire Line
+	6350 3900 6350 7600
+Wire Wire Line
+	6350 7600 3700 7600
+Wire Wire Line
+	3700 7600 3700 2350
+Wire Wire Line
+	3700 2350 4350 2350
+Wire Wire Line
+	3500 6200 3850 6200
+Wire Wire Line
+	3500 6300 3950 6300
+Wire Wire Line
+	4350 6450 3850 6450
+Wire Wire Line
+	3850 6450 3850 6800
+Wire Wire Line
+	3850 6800 3500 6800
+Wire Wire Line
+	5950 5450 6050 5450
+Wire Wire Line
+	6050 5450 6050 7450
+Wire Wire Line
+	6050 7450 3850 7450
+Wire Wire Line
+	3850 7450 3850 6900
+Wire Wire Line
+	3850 6900 3500 6900
+Wire Wire Line
+	6200 3800 7050 3800
+Wire Wire Line
+	6350 3900 7050 3900
+Wire Wire Line
+	5950 3250 7050 3250
+$Sheet
+S 7050 1750 1050 1100
+U 5F2C75FB
+F0 "mc33814" 50
+F1 "mc33814.sch" 50
+F2 "CPU-A6" I L 7050 2200 50 
+F3 "VREG-IN" I R 8100 1800 50 
+F4 "CPU-SCLK" I L 7050 1900 50 
+F5 "CPU-MOSI" I L 7050 2000 50 
+F6 "VPPREF" I R 8100 1900 50 
+F7 "CPU-MISO" O L 7050 2100 50 
+F8 "5v" I R 8100 2750 50 
+F9 "VPPSENS" I R 8100 2000 50 
+F10 "RESET" I L 7050 1800 50 
+F11 "VPROT" I R 8100 2100 50 
+F12 "12v-SW" I R 8100 2650 50 
+F13 "CPU-A9" I L 7050 2300 50 
+F14 "CPU-A10" I L 7050 2400 50 
+F15 "FP-OUT" O R 8100 2200 50 
+$EndSheet
+Wire Wire Line
+	7050 1900 6200 1900
+Wire Wire Line
+	6200 1900 6200 2450
+Wire Wire Line
+	6200 2450 5950 2450
+Wire Wire Line
+	7050 2000 6300 2000
+Wire Wire Line
+	6300 2000 6300 2550
+Wire Wire Line
+	6300 2550 5950 2550
+Wire Wire Line
+	7050 2100 6400 2100
+Wire Wire Line
+	6400 2100 6400 2650
+Wire Wire Line
+	6400 2650 5950 2650
+Wire Wire Line
+	5950 6550 6700 6550
+Wire Wire Line
+	6700 6550 6700 2200
+Wire Wire Line
+	6700 2200 7050 2200
+Wire Wire Line
+	4350 3350 4000 3350
+Wire Wire Line
+	4000 3350 4000 750 
+Wire Wire Line
+	4000 750  6850 750 
+Wire Wire Line
+	6850 750  6850 2300
+Wire Wire Line
+	6850 2300 7050 2300
+Wire Wire Line
+	4350 3550 4050 3550
+Wire Wire Line
+	4050 800  6800 800 
+Wire Wire Line
+	6800 800  6800 2400
+Wire Wire Line
+	6800 2400 7050 2400
+$Sheet
+S 1000 750  900  1350
+U 5F2F8F45
+F0 "Power+Reset" 50
+F1 "Power+Reset.sch" 50
+F2 "VBat" I R 1900 2000 50 
+F3 "VRegIn" I R 1900 950 50 
+F4 "5v" I R 1900 1050 50 
+F5 "VPROT" I R 1900 1900 50 
+F6 "VPPREF" I R 1900 850 50 
+F7 "VPPSENS" I R 1900 1150 50 
+F8 "RESET" O R 1900 1450 50 
+$EndSheet
+Wire Wire Line
+	5150 1050 5150 1150
+Wire Wire Line
+	5250 1150 5250 1050
+Wire Wire Line
+	5250 1050 5150 1050
+Connection ~ 5150 1050
+Wire Wire Line
+	4100 1450 4100 900 
+Wire Wire Line
+	4100 900  6750 900 
+Wire Wire Line
+	6750 900  6750 1800
+Wire Wire Line
+	6750 1800 7050 1800
+Wire Wire Line
+	5250 1050 8500 1050
+Wire Wire Line
+	8500 1050 8500 2750
+Wire Wire Line
+	8500 2750 8100 2750
+Connection ~ 5250 1050
+Wire Wire Line
+	2450 5850 2200 5850
+Wire Wire Line
+	8050 6100 8500 6100
+Wire Wire Line
+	8500 6100 8500 2750
+Connection ~ 8500 2750
+Wire Wire Line
+	4350 1450 4100 1450
+Wire Wire Line
+	4050 3550 4050 800 
+$Comp
+L power:GND #PWR0101
+U 1 1 5F461A92
+P 3100 1750
+F 0 "#PWR0101" H 3100 1500 50  0001 C CNN
+F 1 "GND" V 3105 1622 50  0000 R CNN
+F 2 "" H 3100 1750 50  0001 C CNN
+F 3 "" H 3100 1750 50  0001 C CNN
+	1    3100 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Crystal_GND2 Y?
+U 1 1 5F444805
+P 3300 1750
+F 0 "Y?" V 3254 1880 50  0000 L CNN
+F 1 "Crystal_GND2" V 3345 1880 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering" H 3300 1750 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Yangxing-Tech-X322516MLB4SI_C13738.pdf" H 3300 1750 50  0001 C CNN
+F 4 "C13738" V 3300 1750 50  0001 C CNN "LCSC_PN"
+F 5 "SMD-3225_4P" V 3300 1750 50  0001 C CNN "LCSC_FP"
+	1    3300 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F42D614
+P 2600 1750
+F 0 "R?" H 2670 1796 50  0000 L CNN
+F 1 "1m" H 2670 1705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2530 1750 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1004T5E_C22935.pdf" H 2600 1750 50  0001 C CNN
+F 4 "C22935" H 2600 1750 50  0001 C CNN "LCSC_PN"
+F 5 "0603" H 2600 1750 50  0001 C CNN "LCSC_FP"
+	1    2600 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1600 4250 1600
+Wire Wire Line
+	4250 1600 4250 1650
+Wire Wire Line
+	4250 1650 4350 1650
+Connection ~ 3300 1600
+Wire Wire Line
+	3300 1900 4250 1900
+Wire Wire Line
+	4250 1900 4250 1850
+Wire Wire Line
+	4250 1850 4350 1850
+Connection ~ 3300 1900
+Wire Wire Line
+	1900 1050 2200 1050
+Wire Wire Line
+	2200 5850 2200 1050
+Connection ~ 2200 1050
+Wire Wire Line
+	2200 1050 5150 1050
+Wire Wire Line
+	1900 950  8550 950 
+Wire Wire Line
+	8550 950  8550 1800
+Wire Wire Line
+	8550 1800 8100 1800
+Wire Wire Line
+	1900 850  8600 850 
+Wire Wire Line
+	8600 850  8600 1900
+Wire Wire Line
+	8600 1900 8100 1900
+Wire Wire Line
+	1900 1150 3950 1150
+Wire Wire Line
+	3950 1150 3950 700 
+Wire Wire Line
+	3950 700  8650 700 
+Wire Wire Line
+	8650 700  8650 2000
+Wire Wire Line
+	8650 2000 8100 2000
+Wire Wire Line
+	1900 1450 4100 1450
+Connection ~ 4100 1450
+Text GLabel 8650 5300 2    50   Input ~ 0
+CONN_VBAT
+Text GLabel 8650 6200 2    50   Input ~ 0
+CONN_VPROT
+Text GLabel 8650 3450 2    50   Input ~ 0
+CONN_VPROT
+Text GLabel 8650 2100 2    50   Input ~ 0
+CONN_VPROT
+Text GLabel 2000 1900 2    50   Input ~ 0
+CONN_VPROT
+Wire Wire Line
+	2000 1900 1900 1900
+Text GLabel 2000 2000 2    50   Input ~ 0
+CONN_VBAT
+Wire Wire Line
+	2000 2000 1900 2000
+Text GLabel 2100 6700 0    50   Input ~ 0
+CONN_12v-SW
+Text GLabel 8650 4050 2    50   Input ~ 0
+CONN_12v-SW
+Text GLabel 8650 2650 2    50   Input ~ 0
+CONN_12v-SW
+Text GLabel 2100 5050 0    50   Input ~ 0
+CONN_12v-SW
+Text GLabel 8650 2200 2    50   Output ~ 0
+CONN_FP-OUT
+Text GLabel 8650 3250 2    50   Output ~ 0
+CONN_ST_SIG
+Text GLabel 8650 3350 2    50   Input ~ 0
+CONN_12v-SW
+Text GLabel 8650 3800 2    50   Output ~ 0
+CONN_FAN-OUT
+Text GLabel 8650 3900 2    50   Output ~ 0
+CONN_TACH-OUT
+Text GLabel 8650 5200 2    50   Input ~ 0
+CONN_O2-IN
+Text GLabel 8650 5000 2    50   Input ~ 0
+CONN_CLT-IN
+Text GLabel 8650 4900 2    50   Input ~ 0
+CONN_IAT-IN
+Text GLabel 8650 5100 2    50   Input ~ 0
+CONN_TPS-IN
+Text GLabel 2100 5150 0    50   Output ~ 0
+CONN_INJ-4-OUT
+Text GLabel 2100 5250 0    50   Output ~ 0
+CONN_INJ-3-OUT
+Text GLabel 2100 5450 0    50   Output ~ 0
+CONN_INJ-2-OUT
+Text GLabel 2100 5350 0    50   Output ~ 0
+CONN_INJ-1-OUT
+Text GLabel 2100 6800 0    50   Output ~ 0
+CONN_IDLE-OUT
+Text GLabel 2100 6900 0    50   Output ~ 0
+CONN_BOOST-OUT
+Text GLabel 2100 6200 0    50   Output ~ 0
+CONN_IGN-2-OUT
+Text GLabel 2100 6300 0    50   Output ~ 0
+CONN_IGN-1-OUT
+Text GLabel 8650 5550 2    50   Input ~ 0
+CONN_CAM-IN
+Text GLabel 8650 5650 2    50   Input ~ 0
+CONN_CRANK-IN
+Text GLabel 8650 5750 2    50   Input ~ 0
+CONN_FLEX-IN
+Text GLabel 8650 5850 2    50   Input ~ 0
+CONN_CLUTCH-IN
+Wire Wire Line
+	8050 4900 8650 4900
+Wire Wire Line
+	8050 5000 8650 5000
+Wire Wire Line
+	8050 5100 8650 5100
+Wire Wire Line
+	8050 5200 8650 5200
+Wire Wire Line
+	8050 5300 8650 5300
+Wire Wire Line
+	8050 5550 8650 5550
+Wire Wire Line
+	8050 5650 8650 5650
+Wire Wire Line
+	8050 5750 8650 5750
+Wire Wire Line
+	8050 5850 8650 5850
+Wire Wire Line
+	8050 6200 8650 6200
+Wire Wire Line
+	8100 4050 8650 4050
+Wire Wire Line
+	8100 3900 8650 3900
+Wire Wire Line
+	8100 3800 8650 3800
+Wire Wire Line
+	8100 3450 8650 3450
+Wire Wire Line
+	8100 3350 8650 3350
+Wire Wire Line
+	8100 3250 8650 3250
+Wire Wire Line
+	8100 2650 8650 2650
+Wire Wire Line
+	8100 2200 8650 2200
+Wire Wire Line
+	8100 2100 8650 2100
+Wire Wire Line
+	2100 5050 2450 5050
+Wire Wire Line
+	2100 5150 2450 5150
+Wire Wire Line
+	2100 5250 2450 5250
+Wire Wire Line
+	2100 5350 2450 5350
+Wire Wire Line
+	2100 5450 2450 5450
+Wire Wire Line
+	2100 6200 2450 6200
+Wire Wire Line
+	2100 6300 2450 6300
+Wire Wire Line
+	2100 6700 2450 6700
+Wire Wire Line
+	2100 6800 2450 6800
+Wire Wire Line
+	2100 6900 2450 6900
+Wire Wire Line
+	2600 1600 3300 1600
+Wire Wire Line
+	2600 1900 3300 1900
 $EndSCHEMATC
