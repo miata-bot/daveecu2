@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
+Sheet 8 10
 Title ""
 Date ""
 Rev ""
@@ -18,8 +18,8 @@ L speeduino_ic_automotive:MC33814 U?
 U 1 1 5F2C7EEA
 P 5950 3500
 AR Path="/5F2C7EEA" Ref="U?"  Part="1" 
-AR Path="/5F2C75FB/5F2C7EEA" Ref="U?"  Part="1" 
-F 0 "U?" H 7094 3546 50  0000 L CNN
+AR Path="/5F2C75FB/5F2C7EEA" Ref="U11"  Part="1" 
+F 0 "U11" H 7094 3546 50  0000 L CNN
 F 1 "MC33814" H 7094 3455 50  0000 L CNN
 F 2 "Package_QFP:LQFP-48-1EP_7x7mm_P0.5mm_EP3.6x3.6mm_ThermalVias" H 5950 3500 50  0001 C CNN
 F 3 "" H 5950 3500 50  0001 C CNN
