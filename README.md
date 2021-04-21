@@ -1,2 +1,11 @@
-## Pin Mapping
-https://github.com/noisymime/speeduino/blob/ac6f1d1b255b1589fda397a5ab813a514d823435/speeduino/init.ino#L1522-L1554
+# Speeduino STM32
+
+## Schematic TODO
+
+* Calculate R53 and R54 values for 3v3 rail
+* Convert all resistors in the sensor sheet to 0402
+* Convert all capacitors in the sensor sheet to 0402
+* Condense common resistors into common values
+* Condense common caps into common values
+* Find a USB-C connector
+* Check if Q1 and Q2 can be the same part
