@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 9
-Title "Speeduino STM32"
+Title "DaveECU2"
 Date "2021-04-20"
 Rev "v0.1"
 Comp ""

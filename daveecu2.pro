@@ -1,4 +1,4 @@
-update=Mon 22 Feb 2021 08:28:54 PM PST
+update=Thu 22 Apr 2021 07:31:42 AM PDT
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=speeduino-aio-na6-pnp.net
+LastNetListRead=daveecu2.net
 CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
@@ -71,7 +71,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.05
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
