@@ -1,6 +1,18 @@
-# Speeduino STM32
+# DaveECU2 Speeduino Mainboard
 
-![speeduino-aio-na6-pnp.png](speeduino-aio-na6-pnp.png)
+![daveecu2.png](daveecu2.png)
+
+## Features
+
+* 4 Injectors
+* 4 Ignitions
+* 1 each CAM and Crank input
+* 1 wire Idle
+* PWM boost
+* [PLANNED] AC control
+* [PLANNED] Additional input/outputs
+* [PLANNED] RTC w/ battery backup
+* [PLANNED] SD card logging
 
 ## Schematic TODO
 
