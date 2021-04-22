@@ -3,8 +3,8 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 9
-Title "Speeduino STM32"
+Sheet 9 10
+Title "DaveECU2"
 Date "2021-04-20"
 Rev "v0.1"
 Comp ""
@@ -158,40 +158,6 @@ NoConn ~ 3050 2700
 NoConn ~ 3050 2800
 NoConn ~ 3050 2900
 $Comp
-L Device:Varistor RV1
-U 1 1 60B45CFD
-P 7300 1900
-F 0 "RV1" H 7179 1854 50  0000 R CNN
-F 1 "Varistor" H 7179 1945 50  0000 R CNN
-F 2 "Varistor:RV_Disc_D15.5mm_W3.9mm_P7.5mm" V 7230 1900 50  0001 C CNN
-F 3 "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AWA0002+ERZV14D220+7+WW" H 7300 1900 50  0001 C CNN
-F 4 "C1527916" H 7300 1900 50  0001 C CNN "LCSC_PN"
-F 5 "Disc15.5mm" H 7300 1900 50  0001 C CNN "LCSC_FP"
-F 6 "P7307-ND" H 7300 1900 50  0001 C CNN "DIGIKEY"
-	1    7300 1900
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C49
-U 1 1 60B470D5
-P 8100 1950
-F 0 "C49" H 8192 1996 50  0000 L CNN
-F 1 "0.1u" H 8192 1905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 8100 1950 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/1805021622_KEMET-C1206C104K5RAC7800_C141184.pdf" H 8100 1950 50  0001 C CNN
-F 4 "C141184" H 8100 1950 50  0001 C CNN "LCSC_PN"
-F 5 "1206" H 8100 1950 50  0001 C CNN "LCSC_FP"
-	1    8100 1950
-	1    0    0    -1  
-$EndComp
-Text HLabel 6800 1550 0    50   Input ~ 0
-VBAT
-Wire Wire Line
-	7300 1550 7300 1750
-Wire Wire Line
-	7800 1550 7300 1550
-Connection ~ 7300 1550
-$Comp
 L Device:C_Small C47
 U 1 1 60B55285
 P 7750 3800
@@ -217,42 +183,8 @@ F 5 "SMD,4x5.4mm" H 7450 3800 50  0001 C CNN "LCSC_FP"
 	1    7450 3800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:D_Small D21
-U 1 1 60B5A34C
-P 8400 1550
-F 0 "D21" H 8400 1343 50  0000 C CNN
-F 1 "MM3Zxx" H 8400 1434 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 8400 1550 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/1809111719_ON-Semiconductor-SZMM3Z5V1ST1G_C152524.pdf" V 8400 1550 50  0001 C CNN
-F 4 "C152524" H 8400 1550 50  0001 C CNN "LCSC_PN"
-F 5 "SOD-323" H 8400 1550 50  0001 C CNN "LCSC_FP"
-	1    8400 1550
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7800 1550 8100 1550
-Wire Wire Line
-	8100 1550 8100 1850
-Connection ~ 7800 1550
-Wire Wire Line
-	8100 1550 8300 1550
-Connection ~ 8100 1550
 Text GLabel 2950 3100 0    50   Input ~ 0
 VREG
-Text GLabel 8500 1550 2    50   Input ~ 0
-VREG
-Wire Wire Line
-	7300 2050 7300 2150
-Wire Wire Line
-	7300 2150 7800 2150
-Wire Wire Line
-	7800 2050 7800 2150
-Connection ~ 7800 2150
-Wire Wire Line
-	7800 2150 8100 2150
-Wire Wire Line
-	8100 2050 8100 2150
 $Comp
 L Device:Q_PNP_BEC Q2
 U 1 1 60B782C3
@@ -305,129 +237,19 @@ Wire Wire Line
 	7450 3900 7450 4050
 Wire Wire Line
 	7750 4050 7750 3900
-Text GLabel 4750 5050 2    50   Input ~ 0
-VPROT
 Text GLabel 4300 3900 3    50   Input ~ 0
 VPROT
-$Comp
-L Device:C_Small C50
-U 1 1 60B98827
-P 4350 5250
-F 0 "C50" H 4442 5296 50  0000 L CNN
-F 1 "0.1u" H 4442 5205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 4350 5250 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/1805021622_KEMET-C1206C104K5RAC7800_C141184.pdf" H 4350 5250 50  0001 C CNN
-F 4 "C141184" H 4350 5250 50  0001 C CNN "LCSC_PN"
-F 5 "1206" H 4350 5250 50  0001 C CNN "LCSC_FP"
-	1    4350 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP_Small C46
-U 1 1 60B98E5B
-P 4000 5200
-F 0 "C46" H 4088 5246 50  0000 L CNN
-F 1 "47u" H 4088 5155 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_5x5.8" H 4000 5200 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/1912111437_PANASONIC-EEEFK0J470AR_C336380.pdf" H 4000 5200 50  0001 C CNN
-F 4 "C336380" H 4000 5200 50  0001 C CNN "LCSC_PN"
-F 5 "SMD,5x5.8mm" H 4000 5200 50  0001 C CNN "LCSC_FP"
-	1    4000 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D20
-U 1 1 60B9A71D
-P 3550 5200
-F 0 "D20" V 3504 5270 50  0000 L CNN
-F 1 "MM3Zxx" V 3595 5270 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 3550 5200 50  0001 C CNN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/mm3z2v4.pdf" V 3550 5200 50  0001 C CNN
-F 4 "C152524" V 3550 5200 50  0001 C CNN "LCSC_PN"
-F 5 "SOD-323" V 3550 5200 50  0001 C CNN "LCSC_FP"
-	1    3550 5200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4350 5350 4350 5450
-Wire Wire Line
-	4350 5050 4350 5150
-Wire Wire Line
-	4000 5050 4000 5100
-Wire Wire Line
-	4000 5050 4350 5050
-Wire Wire Line
-	4000 5050 3550 5050
-Wire Wire Line
-	3550 5050 3550 5100
-Connection ~ 4000 5050
-Wire Wire Line
-	4350 5450 4000 5450
-Wire Wire Line
-	4000 5450 4000 5300
-Wire Wire Line
-	3550 5300 3550 5450
-Wire Wire Line
-	3550 5450 4000 5450
-Connection ~ 4000 5450
-Connection ~ 4350 5050
-Wire Wire Line
-	7800 1850 7800 1550
-$Comp
-L Device:CP_Small C48
-U 1 1 60B4695A
-P 7800 1950
-F 0 "C48" H 7888 1996 50  0000 L CNN
-F 1 "10u" H 7888 1905 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-20_Kemet-V_Pad2.25x2.55mm_HandSolder" H 7800 1950 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/1809200017_KEMET-T491D106K050AT_C117038.pdf" H 7800 1950 50  0001 C CNN
-F 4 "C117038" H 7800 1950 50  0001 C CNN "LCSC_PN"
-F 5 "CASE-D_7343" H 7800 1950 50  0001 C CNN "LCSC_FP"
-	1    7800 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7300 2150 6950 2150
-Connection ~ 7300 2150
-Wire Wire Line
-	6800 1550 7300 1550
-Wire Wire Line
-	4350 5050 4650 5050
 Wire Wire Line
 	7600 2900 8300 2900
 Wire Wire Line
 	7900 3300 8300 3300
 Wire Wire Line
 	6950 4050 7450 4050
-Connection ~ 6950 4050
 Wire Wire Line
 	7450 4050 7750 4050
 Connection ~ 7450 4050
 Wire Wire Line
 	6950 4050 6950 4100
-$Comp
-L Device:C_Small C51
-U 1 1 60C40E4D
-P 4700 5250
-F 0 "C51" H 4792 5296 50  0000 L CNN
-F 1 "0.1u" H 4792 5205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 4700 5250 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/1805021622_KEMET-C1206C104K5RAC7800_C141184.pdf" H 4700 5250 50  0001 C CNN
-F 4 "C141184" H 4700 5250 50  0001 C CNN "LCSC_PN"
-F 5 "1206" H 4700 5250 50  0001 C CNN "LCSC_FP"
-	1    4700 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4700 5150 4700 5050
-Connection ~ 4700 5050
-Wire Wire Line
-	4700 5050 4750 5050
-Wire Wire Line
-	4700 5350 4700 5450
-Wire Wire Line
-	4700 5450 4350 5450
-Connection ~ 4350 5450
 $Comp
 L Connector:TestPoint_Small TP14
 U 1 1 60CE4C6A
@@ -446,24 +268,6 @@ Wire Wire Line
 Connection ~ 8300 3600
 Wire Wire Line
 	8300 3600 8500 3600
-$Comp
-L Connector:TestPoint_Small TP15
-U 1 1 60D88AC9
-P 4700 4850
-F 0 "TP15" H 4748 4896 50  0000 L CNN
-F 1 "TP_VPROT" H 4748 4805 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4900 4850 50  0001 C CNN
-F 3 "~" H 4900 4850 50  0001 C CNN
-	1    4700 4850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4700 4850 4650 4850
-Wire Wire Line
-	4650 4850 4650 5050
-Connection ~ 4650 5050
-Wire Wire Line
-	4650 5050 4700 5050
 $Comp
 L Connector:TestPoint_Small TP13
 U 1 1 60D8A8F2
@@ -496,6 +300,4 @@ Wire Wire Line
 Connection ~ 8300 2900
 Wire Wire Line
 	8300 2900 8500 2900
-Wire Wire Line
-	6950 2150 6950 4050
 $EndSCHEMATC

@@ -1,0 +1,458 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L speeduino_ic_automotive:VNLD5090 U?
+U 1 1 61A4756B
+P 4500 1800
+AR Path="/61A4756B" Ref="U?"  Part="1" 
+AR Path="/5EF79CE0/61A4756B" Ref="U?"  Part="1" 
+AR Path="/5EF927DD/61A4756B" Ref="U?"  Part="1" 
+AR Path="/61A19522/61A4756B" Ref="U?"  Part="1" 
+F 0 "U?" H 4600 2367 50  0000 C CNN
+F 1 "VNLD5090" H 4600 2276 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4700 1100 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/vnld5090-e.pdf" H 4500 1800 50  0001 C CNN
+	1    4500 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A47571
+P 3750 1300
+AR Path="/5EF79CE0/61A47571" Ref="#PWR?"  Part="1" 
+AR Path="/5EF927DD/61A47571" Ref="#PWR?"  Part="1" 
+AR Path="/61A19522/61A47571" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3750 1050 50  0001 C CNN
+F 1 "GND" H 3755 1127 50  0000 C CNN
+F 2 "" H 3750 1300 50  0001 C CNN
+F 3 "" H 3750 1300 50  0001 C CNN
+	1    3750 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A47577
+P 3750 2200
+AR Path="/5EF79CE0/61A47577" Ref="#PWR?"  Part="1" 
+AR Path="/5EF927DD/61A47577" Ref="#PWR?"  Part="1" 
+AR Path="/61A19522/61A47577" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3750 1950 50  0001 C CNN
+F 1 "GND" H 3755 2027 50  0000 C CNN
+F 2 "" H 3750 2200 50  0001 C CNN
+F 3 "" H 3750 2200 50  0001 C CNN
+	1    3750 2200
+	1    0    0    -1  
+$EndComp
+Text HLabel 6650 1050 2    50   Input ~ 0
+12v-SW
+Text HLabel 6350 1600 2    50   Output ~ 0
+VVT-OUT
+Text HLabel 6350 1900 2    50   Output ~ 0
+HC-1
+$Comp
+L power:GND #PWR?
+U 1 1 61A47580
+P 5800 2050
+AR Path="/5EF79CE0/61A47580" Ref="#PWR?"  Part="1" 
+AR Path="/5EF927DD/61A47580" Ref="#PWR?"  Part="1" 
+AR Path="/61A19522/61A47580" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5800 1800 50  0001 C CNN
+F 1 "GND" H 5805 1877 50  0000 C CNN
+F 2 "" H 5800 2050 50  0001 C CNN
+F 3 "" H 5800 2050 50  0001 C CNN
+	1    5800 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A47586
+P 5800 1750
+AR Path="/5EF79CE0/61A47586" Ref="#PWR?"  Part="1" 
+AR Path="/5EF927DD/61A47586" Ref="#PWR?"  Part="1" 
+AR Path="/61A19522/61A47586" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5800 1500 50  0001 C CNN
+F 1 "GND" H 5805 1577 50  0000 C CNN
+F 2 "" H 5800 1750 50  0001 C CNN
+F 3 "" H 5800 1750 50  0001 C CNN
+	1    5800 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 1900 6150 1900
+Wire Wire Line
+	5800 1750 5100 1750
+Wire Wire Line
+	5800 2050 5100 2050
+$Comp
+L Device:R R?
+U 1 1 61A47594
+P 3200 1600
+AR Path="/5EEDB4C5/61A47594" Ref="R?"  Part="1" 
+AR Path="/5EF927DD/61A47594" Ref="R?"  Part="1" 
+AR Path="/61A19522/61A47594" Ref="R?"  Part="1" 
+F 0 "R?" V 2993 1600 50  0000 C CNN
+F 1 "1k" V 3084 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3130 1600 50  0001 C CNN
+F 3 "~" H 3200 1600 50  0001 C CNN
+F 4 "311-1.00KCRCT-ND" V 3200 1600 50  0001 C CNN "DIGIKEY"
+F 5 "C17513" V 3200 1600 50  0001 C CNN "LCSC_PN"
+F 6 "0805" V 3200 1600 50  0001 C CNN "LCSC_FP"
+	1    3200 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A4759D
+P 3200 1900
+AR Path="/5EEDB4C5/61A4759D" Ref="R?"  Part="1" 
+AR Path="/5EF927DD/61A4759D" Ref="R?"  Part="1" 
+AR Path="/61A19522/61A4759D" Ref="R?"  Part="1" 
+F 0 "R?" V 2993 1900 50  0000 C CNN
+F 1 "1k" V 3084 1900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3130 1900 50  0001 C CNN
+F 3 "~" H 3200 1900 50  0001 C CNN
+F 4 "311-1.00KCRCT-ND" V 3200 1900 50  0001 C CNN "DIGIKEY"
+F 5 "C17513" V 3200 1900 50  0001 C CNN "LCSC_PN"
+F 6 "0805" V 3200 1900 50  0001 C CNN "LCSC_FP"
+	1    3200 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 1900 3750 1900
+Wire Wire Line
+	3350 1600 3750 1600
+$Comp
+L Device:R R?
+U 1 1 61A475A8
+P 3750 2050
+AR Path="/5EEDB4C5/61A475A8" Ref="R?"  Part="1" 
+AR Path="/5EF927DD/61A475A8" Ref="R?"  Part="1" 
+AR Path="/61A19522/61A475A8" Ref="R?"  Part="1" 
+F 0 "R?" H 3680 2004 50  0000 R CNN
+F 1 "100k" H 3680 2095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3680 2050 50  0001 C CNN
+F 3 "~" H 3750 2050 50  0001 C CNN
+F 4 "311-100KCRCT-ND" V 3750 2050 50  0001 C CNN "DIGIKEY"
+F 5 "C17407" V 3750 2050 50  0001 C CNN "LCSC_PN"
+F 6 "0805" V 3750 2050 50  0001 C CNN "LCSC_FP"
+	1    3750 2050
+	-1   0    0    1   
+$EndComp
+Connection ~ 3750 1900
+Wire Wire Line
+	3750 1900 4100 1900
+$Comp
+L Device:R R?
+U 1 1 61A475B3
+P 3750 1450
+AR Path="/5EEDB4C5/61A475B3" Ref="R?"  Part="1" 
+AR Path="/5EF927DD/61A475B3" Ref="R?"  Part="1" 
+AR Path="/61A19522/61A475B3" Ref="R?"  Part="1" 
+F 0 "R?" H 3680 1404 50  0000 R CNN
+F 1 "100k" H 3680 1495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3680 1450 50  0001 C CNN
+F 3 "~" H 3750 1450 50  0001 C CNN
+F 4 "311-100KCRCT-ND" V 3750 1450 50  0001 C CNN "DIGIKEY"
+F 5 "C17407" V 3750 1450 50  0001 C CNN "LCSC_PN"
+F 6 "0805" V 3750 1450 50  0001 C CNN "LCSC_FP"
+	1    3750 1450
+	-1   0    0    1   
+$EndComp
+Connection ~ 3750 1600
+Wire Wire Line
+	3750 1600 4100 1600
+$Comp
+L Device:D D?
+U 1 1 61A475BE
+P 6150 2450
+AR Path="/5EF79CE0/61A475BE" Ref="D?"  Part="1" 
+AR Path="/5EF927DD/61A475BE" Ref="D?"  Part="1" 
+AR Path="/61A19522/61A475BE" Ref="D?"  Part="1" 
+F 0 "D?" V 6200 2250 50  0000 L CNN
+F 1 "1n41001" V 6100 2000 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 6150 2450 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810181722_Shandong-Jingdao-Microelectronics-1N4001W_C162732.pdf" H 6150 2450 50  0001 C CNN
+F 4 "C162732" V 6150 2450 50  0001 C CNN "LCSC_PN"
+F 5 "SOD-123" V 6150 2450 50  0001 C CNN "LCSC_FP"
+F 6 "1N4004-TPMSCT-ND" V 6150 2450 50  0001 C CNN "DIGIKEY"
+	1    6150 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6150 2300 6150 1900
+Connection ~ 6150 1900
+Wire Wire Line
+	6150 1900 5100 1900
+Wire Wire Line
+	6150 1050 6150 1250
+Wire Wire Line
+	6650 1050 6150 1050
+$Comp
+L Device:D D?
+U 1 1 61A475CC
+P 6150 1400
+AR Path="/5EF79CE0/61A475CC" Ref="D?"  Part="1" 
+AR Path="/5EF927DD/61A475CC" Ref="D?"  Part="1" 
+AR Path="/61A19522/61A475CC" Ref="D?"  Part="1" 
+F 0 "D?" V 6104 1480 50  0000 L CNN
+F 1 "1n41001" V 6195 1480 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 6150 1400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810181722_Shandong-Jingdao-Microelectronics-1N4001W_C162732.pdf" H 6150 1400 50  0001 C CNN
+F 4 "C162732" V 6150 1400 50  0001 C CNN "LCSC_PN"
+F 5 "SOD-123" V 6150 1400 50  0001 C CNN "LCSC_FP"
+F 6 "1N4004-TPMSCT-ND" V 6150 1400 50  0001 C CNN "DIGIKEY"
+	1    6150 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 1600 6150 1600
+Wire Wire Line
+	6150 1550 6150 1600
+Connection ~ 6150 1600
+Wire Wire Line
+	6150 1600 6350 1600
+Text HLabel 6650 2800 2    50   Input ~ 0
+12v-SW
+Wire Wire Line
+	6650 2800 6150 2800
+Wire Wire Line
+	6150 2800 6150 2600
+$Comp
+L speeduino_ic_automotive:VNLD5090 U?
+U 1 1 61A4947D
+P 4500 4450
+AR Path="/61A4947D" Ref="U?"  Part="1" 
+AR Path="/5EF79CE0/61A4947D" Ref="U?"  Part="1" 
+AR Path="/5EF927DD/61A4947D" Ref="U?"  Part="1" 
+AR Path="/61A19522/61A4947D" Ref="U?"  Part="1" 
+F 0 "U?" H 4600 5017 50  0000 C CNN
+F 1 "VNLD5090" H 4600 4926 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4700 3750 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/vnld5090-e.pdf" H 4500 4450 50  0001 C CNN
+	1    4500 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A49483
+P 3750 3950
+AR Path="/5EF79CE0/61A49483" Ref="#PWR?"  Part="1" 
+AR Path="/5EF927DD/61A49483" Ref="#PWR?"  Part="1" 
+AR Path="/61A19522/61A49483" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3750 3700 50  0001 C CNN
+F 1 "GND" H 3755 3777 50  0000 C CNN
+F 2 "" H 3750 3950 50  0001 C CNN
+F 3 "" H 3750 3950 50  0001 C CNN
+	1    3750 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A49489
+P 3750 4850
+AR Path="/5EF79CE0/61A49489" Ref="#PWR?"  Part="1" 
+AR Path="/5EF927DD/61A49489" Ref="#PWR?"  Part="1" 
+AR Path="/61A19522/61A49489" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3750 4600 50  0001 C CNN
+F 1 "GND" H 3755 4677 50  0000 C CNN
+F 2 "" H 3750 4850 50  0001 C CNN
+F 3 "" H 3750 4850 50  0001 C CNN
+	1    3750 4850
+	1    0    0    -1  
+$EndComp
+Text HLabel 6650 3700 2    50   Input ~ 0
+12v-SW
+Text HLabel 6350 4250 2    50   Output ~ 0
+HC-2
+Text HLabel 6350 4550 2    50   Output ~ 0
+HC-3
+$Comp
+L power:GND #PWR?
+U 1 1 61A49492
+P 5800 4700
+AR Path="/5EF79CE0/61A49492" Ref="#PWR?"  Part="1" 
+AR Path="/5EF927DD/61A49492" Ref="#PWR?"  Part="1" 
+AR Path="/61A19522/61A49492" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5800 4450 50  0001 C CNN
+F 1 "GND" H 5805 4527 50  0000 C CNN
+F 2 "" H 5800 4700 50  0001 C CNN
+F 3 "" H 5800 4700 50  0001 C CNN
+	1    5800 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A49498
+P 5800 4400
+AR Path="/5EF79CE0/61A49498" Ref="#PWR?"  Part="1" 
+AR Path="/5EF927DD/61A49498" Ref="#PWR?"  Part="1" 
+AR Path="/61A19522/61A49498" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5800 4150 50  0001 C CNN
+F 1 "GND" H 5805 4227 50  0000 C CNN
+F 2 "" H 5800 4400 50  0001 C CNN
+F 3 "" H 5800 4400 50  0001 C CNN
+	1    5800 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 4550 6150 4550
+Wire Wire Line
+	5800 4400 5100 4400
+Wire Wire Line
+	5800 4700 5100 4700
+$Comp
+L Device:R R?
+U 1 1 61A494A6
+P 3200 4250
+AR Path="/5EEDB4C5/61A494A6" Ref="R?"  Part="1" 
+AR Path="/5EF927DD/61A494A6" Ref="R?"  Part="1" 
+AR Path="/61A19522/61A494A6" Ref="R?"  Part="1" 
+F 0 "R?" V 2993 4250 50  0000 C CNN
+F 1 "1k" V 3084 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3130 4250 50  0001 C CNN
+F 3 "~" H 3200 4250 50  0001 C CNN
+F 4 "311-1.00KCRCT-ND" V 3200 4250 50  0001 C CNN "DIGIKEY"
+F 5 "C17513" V 3200 4250 50  0001 C CNN "LCSC_PN"
+F 6 "0805" V 3200 4250 50  0001 C CNN "LCSC_FP"
+	1    3200 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A494AF
+P 3200 4550
+AR Path="/5EEDB4C5/61A494AF" Ref="R?"  Part="1" 
+AR Path="/5EF927DD/61A494AF" Ref="R?"  Part="1" 
+AR Path="/61A19522/61A494AF" Ref="R?"  Part="1" 
+F 0 "R?" V 2993 4550 50  0000 C CNN
+F 1 "1k" V 3084 4550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3130 4550 50  0001 C CNN
+F 3 "~" H 3200 4550 50  0001 C CNN
+F 4 "311-1.00KCRCT-ND" V 3200 4550 50  0001 C CNN "DIGIKEY"
+F 5 "C17513" V 3200 4550 50  0001 C CNN "LCSC_PN"
+F 6 "0805" V 3200 4550 50  0001 C CNN "LCSC_FP"
+	1    3200 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 4550 3750 4550
+Wire Wire Line
+	3350 4250 3750 4250
+$Comp
+L Device:R R?
+U 1 1 61A494BA
+P 3750 4700
+AR Path="/5EEDB4C5/61A494BA" Ref="R?"  Part="1" 
+AR Path="/5EF927DD/61A494BA" Ref="R?"  Part="1" 
+AR Path="/61A19522/61A494BA" Ref="R?"  Part="1" 
+F 0 "R?" H 3680 4654 50  0000 R CNN
+F 1 "100k" H 3680 4745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3680 4700 50  0001 C CNN
+F 3 "~" H 3750 4700 50  0001 C CNN
+F 4 "311-100KCRCT-ND" V 3750 4700 50  0001 C CNN "DIGIKEY"
+F 5 "C17407" V 3750 4700 50  0001 C CNN "LCSC_PN"
+F 6 "0805" V 3750 4700 50  0001 C CNN "LCSC_FP"
+	1    3750 4700
+	-1   0    0    1   
+$EndComp
+Connection ~ 3750 4550
+Wire Wire Line
+	3750 4550 4100 4550
+$Comp
+L Device:R R?
+U 1 1 61A494C5
+P 3750 4100
+AR Path="/5EEDB4C5/61A494C5" Ref="R?"  Part="1" 
+AR Path="/5EF927DD/61A494C5" Ref="R?"  Part="1" 
+AR Path="/61A19522/61A494C5" Ref="R?"  Part="1" 
+F 0 "R?" H 3680 4054 50  0000 R CNN
+F 1 "100k" H 3680 4145 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3680 4100 50  0001 C CNN
+F 3 "~" H 3750 4100 50  0001 C CNN
+F 4 "311-100KCRCT-ND" V 3750 4100 50  0001 C CNN "DIGIKEY"
+F 5 "C17407" V 3750 4100 50  0001 C CNN "LCSC_PN"
+F 6 "0805" V 3750 4100 50  0001 C CNN "LCSC_FP"
+	1    3750 4100
+	-1   0    0    1   
+$EndComp
+Connection ~ 3750 4250
+Wire Wire Line
+	3750 4250 4100 4250
+$Comp
+L Device:D D?
+U 1 1 61A494D0
+P 6150 5100
+AR Path="/5EF79CE0/61A494D0" Ref="D?"  Part="1" 
+AR Path="/5EF927DD/61A494D0" Ref="D?"  Part="1" 
+AR Path="/61A19522/61A494D0" Ref="D?"  Part="1" 
+F 0 "D?" V 6200 4900 50  0000 L CNN
+F 1 "1n41001" V 6100 4650 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 6150 5100 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810181722_Shandong-Jingdao-Microelectronics-1N4001W_C162732.pdf" H 6150 5100 50  0001 C CNN
+F 4 "C162732" V 6150 5100 50  0001 C CNN "LCSC_PN"
+F 5 "SOD-123" V 6150 5100 50  0001 C CNN "LCSC_FP"
+F 6 "1N4004-TPMSCT-ND" V 6150 5100 50  0001 C CNN "DIGIKEY"
+	1    6150 5100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6150 4950 6150 4550
+Connection ~ 6150 4550
+Wire Wire Line
+	6150 4550 5100 4550
+Wire Wire Line
+	6150 3700 6150 3900
+Wire Wire Line
+	6650 3700 6150 3700
+$Comp
+L Device:D D?
+U 1 1 61A494DE
+P 6150 4050
+AR Path="/5EF79CE0/61A494DE" Ref="D?"  Part="1" 
+AR Path="/5EF927DD/61A494DE" Ref="D?"  Part="1" 
+AR Path="/61A19522/61A494DE" Ref="D?"  Part="1" 
+F 0 "D?" V 6104 4130 50  0000 L CNN
+F 1 "1n41001" V 6195 4130 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 6150 4050 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810181722_Shandong-Jingdao-Microelectronics-1N4001W_C162732.pdf" H 6150 4050 50  0001 C CNN
+F 4 "C162732" V 6150 4050 50  0001 C CNN "LCSC_PN"
+F 5 "SOD-123" V 6150 4050 50  0001 C CNN "LCSC_FP"
+F 6 "1N4004-TPMSCT-ND" V 6150 4050 50  0001 C CNN "DIGIKEY"
+	1    6150 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 4250 6150 4250
+Wire Wire Line
+	6150 4200 6150 4250
+Connection ~ 6150 4250
+Wire Wire Line
+	6150 4250 6350 4250
+Text HLabel 6650 5450 2    50   Input ~ 0
+12v-SW
+Wire Wire Line
+	6650 5450 6150 5450
+Wire Wire Line
+	6150 5450 6150 5250
+Text HLabel 3050 4250 0    50   Input ~ 0
+MCU-PWM2
+Text HLabel 3050 4550 0    50   Input ~ 0
+MCU-PWM3
+Text HLabel 3050 1600 0    50   Input ~ 0
+MCU-VVT
+Text HLabel 3050 1900 0    50   Input ~ 0
+MCU-PWM1
+$EndSCHEMATC

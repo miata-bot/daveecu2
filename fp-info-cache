@@ -1,4 +1,4 @@
-19097446062763032
+19104269457955263
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -76313,6 +76313,34 @@ SHT1x
 0
 8
 8
+SensorPressure
+Freescale_98ARH99066A
+https://www.nxp.com/docs/en/data-sheet/MPXH6250A.pdf
+sensor pressure ssop 98ARH99066A
+0
+8
+8
+SensorPressure
+Freescale_98ARH99089A
+https://www.nxp.com/docs/en/data-sheet/MPXH6250A.pdf
+sensor pressure ssop 98ARH99089A
+0
+8
+8
+SensorPressure
+Honeywell_40PCxxxG1A
+https://www.honeywellscportal.com/index.php?ci_id=138832
+pressure sensor automotive honeywell
+0
+3
+3
+SensorPressure
+TE_MS5525DSO-DBxxxyS
+Pressure Sensor, Dual-Barbed, https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5525DSO&DocType=DS&DocLang=English
+Pressure DualBarbed
+0
+14
+14
 Sensor_Audio
 CUI_CMC-4013-SMT
 Omnidirectional, -42dB, reflowable, electret condenser microphone https://www.cuidevices.com/product/resource/cmc-4013-smt-tr.pdf

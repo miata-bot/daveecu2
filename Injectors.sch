@@ -3,8 +3,8 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
-Title "Speeduino STM32"
+Sheet 8 8
+Title "DaveECU2"
 Date "2021-04-20"
 Rev "v0.1"
 Comp ""
@@ -539,4 +539,8 @@ Wire Wire Line
 	1350 5400 1500 5400
 Text HLabel 1150 5100 0    50   Input ~ 0
 MCU-INJ-3
+NoConn ~ 2150 1900
+NoConn ~ 2150 2200
+NoConn ~ 2300 5250
+NoConn ~ 2300 5550
 $EndSCHEMATC

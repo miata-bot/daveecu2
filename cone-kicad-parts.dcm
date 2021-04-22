@@ -4,4 +4,8 @@ $CMP MP2331H
 F https://www.mouser.com/datasheet/2/277/MP2331H-1624290.pdf
 $ENDCMP
 #
+$CMP MPXH6250A
+F https://www.nxp.com/docs/en/data-sheet/MPXH6250A.pdf
+$ENDCMP
+#
 #End Doc Library

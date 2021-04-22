@@ -3,8 +3,8 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 9
-Title "Speeduino STM32"
+Sheet 3 8
+Title "DaveECU2"
 Date "2021-04-20"
 Rev "v0.1"
 Comp ""
@@ -53,7 +53,7 @@ F 3 "" H 4650 4100 50  0001 C CNN
 	1    4650 4100
 	1    0    0    -1  
 $EndComp
-Text HLabel 7300 2950 2    50   Input ~ 0
+Text HLabel 7550 2950 2    50   Input ~ 0
 12v-SW
 Text HLabel 7250 3500 2    50   Output ~ 0
 IDLE-OUT
@@ -89,35 +89,8 @@ Text HLabel 3950 3500 0    50   Input ~ 0
 MCU-IDLE
 Text HLabel 3950 3800 0    50   Input ~ 0
 MCU-BOOST
-$Comp
-L Device:D D?
-U 1 1 5EF93E94
-P 6800 3300
-AR Path="/5EF79CE0/5EF93E94" Ref="D?"  Part="1" 
-AR Path="/5EF927DD/5EF93E94" Ref="D2"  Part="1" 
-F 0 "D2" V 6754 3380 50  0000 L CNN
-F 1 "1n41001" V 6845 3380 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123" H 6800 3300 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/1810181722_Shandong-Jingdao-Microelectronics-1N4001W_C162732.pdf" H 6800 3300 50  0001 C CNN
-F 4 "C162732" V 6800 3300 50  0001 C CNN "LCSC_PN"
-F 5 "SOD-123" V 6800 3300 50  0001 C CNN "LCSC_FP"
-F 6 "1N4004-TPMSCT-ND" V 6800 3300 50  0001 C CNN "DIGIKEY"
-	1    6800 3300
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	7300 2950 6800 2950
-Wire Wire Line
-	6800 2950 6800 3150
-Wire Wire Line
-	7250 3500 6800 3500
-Wire Wire Line
-	6800 3500 6800 3450
-Wire Wire Line
-	6800 3500 6000 3500
-Connection ~ 6800 3500
-Wire Wire Line
-	7250 3800 6000 3800
+	7250 3800 7050 3800
 Wire Wire Line
 	6700 3650 6000 3650
 Wire Wire Line
@@ -196,4 +169,58 @@ $EndComp
 Connection ~ 4650 3500
 Wire Wire Line
 	4650 3500 5000 3500
+$Comp
+L Device:D D?
+U 1 1 61A39D1E
+P 7050 4350
+AR Path="/5EF79CE0/61A39D1E" Ref="D?"  Part="1" 
+AR Path="/5EF927DD/61A39D1E" Ref="D?"  Part="1" 
+F 0 "D?" V 7100 4150 50  0000 L CNN
+F 1 "1n41001" V 7000 3900 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 7050 4350 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810181722_Shandong-Jingdao-Microelectronics-1N4001W_C162732.pdf" H 7050 4350 50  0001 C CNN
+F 4 "C162732" V 7050 4350 50  0001 C CNN "LCSC_PN"
+F 5 "SOD-123" V 7050 4350 50  0001 C CNN "LCSC_FP"
+F 6 "1N4004-TPMSCT-ND" V 7050 4350 50  0001 C CNN "DIGIKEY"
+	1    7050 4350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7050 4200 7050 3800
+Connection ~ 7050 3800
+Wire Wire Line
+	7050 3800 6000 3800
+Wire Wire Line
+	7050 2950 7050 3150
+Wire Wire Line
+	7550 2950 7050 2950
+$Comp
+L Device:D D?
+U 1 1 5EF93E94
+P 7050 3300
+AR Path="/5EF79CE0/5EF93E94" Ref="D?"  Part="1" 
+AR Path="/5EF927DD/5EF93E94" Ref="D2"  Part="1" 
+F 0 "D2" V 7004 3380 50  0000 L CNN
+F 1 "1n41001" V 7095 3380 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 7050 3300 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810181722_Shandong-Jingdao-Microelectronics-1N4001W_C162732.pdf" H 7050 3300 50  0001 C CNN
+F 4 "C162732" V 7050 3300 50  0001 C CNN "LCSC_PN"
+F 5 "SOD-123" V 7050 3300 50  0001 C CNN "LCSC_FP"
+F 6 "1N4004-TPMSCT-ND" V 7050 3300 50  0001 C CNN "DIGIKEY"
+	1    7050 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 3500 7050 3500
+Wire Wire Line
+	7050 3450 7050 3500
+Connection ~ 7050 3500
+Wire Wire Line
+	7050 3500 7250 3500
+Text HLabel 7550 4700 2    50   Input ~ 0
+12v-SW
+Wire Wire Line
+	7550 4700 7050 4700
+Wire Wire Line
+	7050 4700 7050 4500
 $EndSCHEMATC
