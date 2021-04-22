@@ -159,13 +159,13 @@ Wire Wire Line
 	4050 1050 3050 1050
 Text GLabel 7650 2150 0    50   Input ~ 0
 12v-SW
-Text GLabel 9000 2250 2    50   Output ~ 0
+Text GLabel 9000 1750 2    50   Output ~ 0
 INJ-1
-Text GLabel 9000 2150 2    50   Output ~ 0
+Text GLabel 9000 1850 2    50   Output ~ 0
 INJ-2
-Text GLabel 9000 2050 2    50   Output ~ 0
+Text GLabel 9000 1550 2    50   Output ~ 0
 INJ-3
-Text GLabel 9000 1950 2    50   Output ~ 0
+Text GLabel 9000 1650 2    50   Output ~ 0
 INJ-4
 Text GLabel 5200 1750 2    50   Output ~ 0
 INJ-1
@@ -225,19 +225,15 @@ Wire Wire Line
 	8750 1950 9000 1950
 Wire Wire Line
 	7650 2250 7800 2250
-Text GLabel 9000 1550 2    50   Output ~ 0
+Text GLabel 9000 2050 2    50   Output ~ 0
 IGN-4
-Text GLabel 9000 1650 2    50   Output ~ 0
+Text GLabel 9000 1950 2    50   Output ~ 0
 IGN-3
-Text GLabel 9000 1750 2    50   Output ~ 0
-IGN-2
-Text GLabel 9000 1850 2    50   Output ~ 0
-IGN-1
 Wire Wire Line
 	9000 1850 8700 1850
-Text GLabel 9000 3700 2    50   Output ~ 0
-FAN
 Text GLabel 9000 3600 2    50   Output ~ 0
+FAN
+Text GLabel 9000 3700 2    50   Output ~ 0
 TACH
 Text GLabel 9000 3500 2    50   Output ~ 0
 IDLE
@@ -304,10 +300,8 @@ Wire Wire Line
 	8100 3100 7650 3100
 Text GLabel 5200 3550 2    50   Output ~ 0
 FP
-Text GLabel 7650 3000 0    50   Output ~ 0
+Text GLabel 8200 3900 3    50   Output ~ 0
 FP
-Wire Wire Line
-	7650 3000 8150 3000
 Text GLabel 7650 2250 0    50   Input ~ 0
 VBAT
 Wire Wire Line
@@ -318,7 +312,7 @@ Text GLabel 7650 1550 0    50   Input ~ 0
 VPROT
 Wire Wire Line
 	7650 1550 8150 1550
-Text GLabel 8700 2450 3    50   Input ~ 0
+Text GLabel 8000 2450 3    50   Input ~ 0
 ST_SIG
 Text GLabel 5250 6100 2    50   Input ~ 0
 VBAT
@@ -526,28 +520,20 @@ $EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 609457BA
-P 8000 2550
-F 0 "#PWR0101" H 8000 2300 50  0001 C CNN
-F 1 "GND" H 8005 2377 50  0000 C CNN
-F 2 "" H 8000 2550 50  0001 C CNN
-F 3 "" H 8000 2550 50  0001 C CNN
-	1    8000 2550
+P 8700 2600
+F 0 "#PWR0101" H 8700 2350 50  0001 C CNN
+F 1 "GND" H 8705 2427 50  0000 C CNN
+F 2 "" H 8700 2600 50  0001 C CNN
+F 3 "" H 8700 2600 50  0001 C CNN
+	1    8700 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 2450 8000 2500
-Wire Wire Line
-	8000 2500 8100 2500
-Wire Wire Line
 	8100 2500 8100 2450
-Connection ~ 8000 2500
-Wire Wire Line
-	8000 2500 8000 2550
 Wire Wire Line
 	8100 2500 8200 2500
 Wire Wire Line
 	8600 2500 8600 2450
-Connection ~ 8100 2500
 Wire Wire Line
 	8500 2450 8500 2500
 Connection ~ 8500 2500
@@ -581,10 +567,6 @@ F 3 "" H 8700 4000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8700 3900 8700 3950
-Wire Wire Line
-	8200 3900 8200 3950
-Wire Wire Line
-	8200 3950 8300 3950
 Connection ~ 8700 3950
 Wire Wire Line
 	8700 3950 8700 4000
@@ -605,7 +587,6 @@ Wire Wire Line
 	8400 3950 8500 3950
 Wire Wire Line
 	8300 3900 8300 3950
-Connection ~ 8300 3950
 Wire Wire Line
 	8300 3950 8400 3950
 $Comp
@@ -629,4 +610,16 @@ Wire Wire Line
 Wire Wire Line
 	9000 3300 9000 3200
 Connection ~ 9000 3200
+Text GLabel 9000 2150 2    50   Output ~ 0
+IGN-1
+Text GLabel 9000 2250 2    50   Output ~ 0
+IGN-2
+Wire Wire Line
+	8600 2500 8700 2500
+Wire Wire Line
+	8700 2500 8700 2450
+Connection ~ 8600 2500
+Wire Wire Line
+	8700 2600 8700 2500
+Connection ~ 8700 2500
 $EndSCHEMATC

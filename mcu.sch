@@ -182,17 +182,6 @@ F 3 "~" H 12500 1300 50  0001 C CNN
 	1    12500 1300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C_Small C42
-U 1 1 60802767
-P 12800 1300
-F 0 "C42" H 12892 1346 50  0000 L CNN
-F 1 "100n" H 12892 1255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 12800 1300 50  0001 C CNN
-F 3 "~" H 12800 1300 50  0001 C CNN
-	1    12800 1300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8900 1200 8900 1150
 Wire Wire Line
@@ -257,11 +246,6 @@ Wire Wire Line
 Wire Wire Line
 	12500 1150 12500 1200
 Connection ~ 12200 1150
-Wire Wire Line
-	12500 1150 12800 1150
-Wire Wire Line
-	12800 1150 12800 1200
-Connection ~ 12500 1150
 $Comp
 L power:GND #PWR067
 U 1 1 6080F8A0
@@ -314,14 +298,9 @@ Wire Wire Line
 Connection ~ 10700 1450
 Wire Wire Line
 	11000 1450 11300 1450
-Wire Wire Line
-	12800 1450 12800 1400
 Connection ~ 11000 1450
 Wire Wire Line
 	12500 1400 12500 1450
-Connection ~ 12500 1450
-Wire Wire Line
-	12500 1450 12800 1450
 Wire Wire Line
 	12200 1400 12200 1450
 Connection ~ 12200 1450
@@ -901,25 +880,6 @@ NoConn ~ 1500 9250
 Wire Wire Line
 	900  8950 1000 8950
 $Comp
-L Power_Protection:USBLC6-2SC6 U10
-U 1 1 60D3313E
-P 4000 7150
-F 0 "U10" H 4250 7550 50  0000 C CNN
-F 1 "USBLC6-2SC6" H 4350 6800 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4000 6650 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 4200 7500 50  0001 C CNN
-	1    4000 7150
-	1    0    0    -1  
-$EndComp
-Text GLabel 3600 7250 0    50   Input ~ 0
-USB_CONN_D-
-Text GLabel 4400 7250 2    50   Input ~ 0
-USB_CONN_D+
-Text GLabel 4400 7050 2    50   Input ~ 0
-USB_D+
-Text GLabel 3600 7050 0    50   Input ~ 0
-USB_D-
-$Comp
 L Regulator_Switching:TPS5430DDA U8
 U 1 1 60E913FF
 P 2000 4700
@@ -1113,12 +1073,12 @@ $EndComp
 $Comp
 L power:GND #PWR045
 U 1 1 60FCDC5B
-P 2050 1350
-F 0 "#PWR045" H 2050 1100 50  0001 C CNN
-F 1 "GND" H 2055 1177 50  0000 C CNN
-F 2 "" H 2050 1350 50  0001 C CNN
-F 3 "" H 2050 1350 50  0001 C CNN
-	1    2050 1350
+P 2050 1400
+F 0 "#PWR045" H 2050 1150 50  0001 C CNN
+F 1 "GND" H 2055 1227 50  0000 C CNN
+F 2 "" H 2050 1400 50  0001 C CNN
+F 3 "" H 2050 1400 50  0001 C CNN
+	1    2050 1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1149,10 +1109,6 @@ Wire Wire Line
 	2250 1050 2350 1050
 Wire Wire Line
 	2650 1050 3050 1050
-Wire Wire Line
-	2050 1300 3050 1300
-Wire Wire Line
-	3050 1300 3050 1250
 $Comp
 L Device:D_Schottky_Small D9
 U 1 1 60FFE992
@@ -1178,25 +1134,8 @@ Wire Wire Line
 Text GLabel 3550 1050 2    50   Output ~ 0
 BUCK_IN
 Wire Wire Line
-	3550 1050 3050 1050
+	3550 1050 3450 1050
 Connection ~ 3050 1050
-Text GLabel 3700 6650 0    50   Input ~ 0
-USB_CONN_VBUS
-Wire Wire Line
-	3700 6650 4000 6650
-Wire Wire Line
-	4000 6650 4000 6750
-$Comp
-L power:GND #PWR052
-U 1 1 610EB86E
-P 4000 7550
-F 0 "#PWR052" H 4000 7300 50  0001 C CNN
-F 1 "GND" H 4005 7377 50  0000 C CNN
-F 2 "" H 4000 7550 50  0001 C CNN
-F 3 "" H 4000 7550 50  0001 C CNN
-	1    4000 7550
-	1    0    0    -1  
-$EndComp
 $Comp
 L Regulator_Switching:TPS5430DDA U9
 U 1 1 60836010
@@ -1381,121 +1320,12 @@ Wire Wire Line
 	7500 900  8300 900 
 Wire Wire Line
 	7500 900  7500 1300
-$Comp
-L Connector:USB_C_Plug_USB2.0 P1
-U 1 1 60A193FC
-P 1150 7150
-F 0 "P1" H 1350 6400 50  0000 C CNN
-F 1 "USB_C_Plug_USB2.0" V 700 7450 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_Amphenol_12401548E4-2A" H 1300 7150 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1300 7150 50  0001 C CNN
-	1    1150 7150
-	1    0    0    -1  
-$EndComp
-Text GLabel 2400 7600 2    50   Input ~ 0
+Text GLabel 2000 7200 2    50   Input ~ 0
 USB_CONN_D-
-Text GLabel 2400 7900 2    50   Input ~ 0
+Text GLabel 2000 7100 2    50   Input ~ 0
 USB_CONN_D+
-$Comp
-L Device:R_Small R49
-U 1 1 60A1C01A
-P 2300 7600
-F 0 "R49" V 2200 7600 50  0000 C CNN
-F 1 "22" V 2400 7600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" H 2300 7600 50  0001 C CNN
-F 3 "~" H 2300 7600 50  0001 C CNN
-	1    2300 7600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R50
-U 1 1 60A1C6F0
-P 2300 7900
-F 0 "R50" V 2200 7900 50  0000 C CNN
-F 1 "22" V 2400 7900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" H 2300 7900 50  0001 C CNN
-F 3 "~" H 2300 7900 50  0001 C CNN
-	1    2300 7900
-	0    1    1    0   
-$EndComp
-Text GLabel 1750 6550 2    50   Input ~ 0
+Text GLabel 2000 6900 2    50   Input ~ 0
 USB_CONN_VBUS
-$Comp
-L power:GND #PWR042
-U 1 1 60A8F4BE
-P 1150 8050
-F 0 "#PWR042" H 1150 7800 50  0001 C CNN
-F 1 "GND" H 1155 7877 50  0000 C CNN
-F 2 "" H 1150 8050 50  0001 C CNN
-F 3 "" H 1150 8050 50  0001 C CNN
-	1    1150 8050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1750 7250 1850 7250
-Wire Wire Line
-	1750 7050 2000 7050
-$Comp
-L power:GND #PWR046
-U 1 1 60ACD6C8
-P 2200 7100
-F 0 "#PWR046" H 2200 6850 50  0001 C CNN
-F 1 "GND" H 2205 6927 50  0000 C CNN
-F 2 "" H 2200 7100 50  0001 C CNN
-F 3 "" H 2200 7100 50  0001 C CNN
-	1    2200 7100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1750 6850 2200 6850
-Wire Wire Line
-	2200 6850 2200 6900
-$Comp
-L Device:R_Small R51
-U 1 1 60ADB925
-P 2500 7000
-F 0 "R51" H 2559 7046 50  0000 L CNN
-F 1 "5.1k" H 2559 6955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" H 2500 7000 50  0001 C CNN
-F 3 "~" H 2500 7000 50  0001 C CNN
-	1    2500 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR047
-U 1 1 60ADBF6E
-P 2500 7100
-F 0 "#PWR047" H 2500 6850 50  0001 C CNN
-F 1 "GND" H 2505 6927 50  0000 C CNN
-F 2 "" H 2500 7100 50  0001 C CNN
-F 3 "" H 2500 7100 50  0001 C CNN
-	1    2500 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R48
-U 1 1 60ADC8E1
-P 2200 7000
-F 0 "R48" H 2259 7046 50  0000 L CNN
-F 1 "5.1k" H 2259 6955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" H 2200 7000 50  0001 C CNN
-F 3 "~" H 2200 7000 50  0001 C CNN
-	1    2200 7000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1750 6750 2500 6750
-Wire Wire Line
-	2500 6750 2500 6900
-Wire Wire Line
-	1850 7250 1850 7900
-Wire Wire Line
-	2000 7050 2000 7600
-Wire Wire Line
-	2200 7600 2000 7600
-Wire Wire Line
-	1850 7900 2200 7900
-NoConn ~ 850  8050
 $Comp
 L power:+5V #PWR?
 U 1 1 60BF4F90
@@ -1561,7 +1391,7 @@ L Connector:TestPoint_Small TP11
 U 1 1 60D44DF2
 P 4450 4650
 F 0 "TP11" H 4498 4696 50  0000 L CNN
-F 1 "TestPoint_Small" H 4498 4605 50  0000 L CNN
+F 1 "TP_3V" H 4498 4605 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4650 4650 50  0001 C CNN
 F 3 "~" H 4650 4650 50  0001 C CNN
 	1    4450 4650
@@ -1577,7 +1407,7 @@ L Connector:TestPoint_Small TP10
 U 1 1 60D524E8
 P 4450 2850
 F 0 "TP10" H 4498 2896 50  0000 L CNN
-F 1 "TestPoint_Small" H 4498 2805 50  0000 L CNN
+F 1 "TP_5V" H 4498 2805 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4650 2850 50  0001 C CNN
 F 3 "~" H 4650 2850 50  0001 C CNN
 	1    4450 2850
@@ -1679,12 +1509,10 @@ F 3 "" H 1150 2050 50  0001 C CNN
 	1    1150 2050
 	1    0    0    -1  
 $EndComp
-Text GLabel 1200 1750 2    50   Output ~ 0
+Text GLabel 1650 1750 2    50   Output ~ 0
 BUCK_EN
 Wire Wire Line
 	1150 1650 1150 1750
-Wire Wire Line
-	1150 1750 1200 1750
 Connection ~ 1150 1750
 Wire Wire Line
 	1150 1750 1150 1850
@@ -1898,4 +1726,189 @@ Text HLabel 12250 6650 2    50   Input ~ 0
 MCU-BARO
 Text HLabel 12250 5750 2    50   Input ~ 0
 MCU-AC
+$Comp
+L Connector:USB_B J4
+U 1 1 60837A90
+P 1700 7100
+F 0 "J4" H 1757 7567 50  0000 C CNN
+F 1 "USB_B" H 1757 7476 50  0000 C CNN
+F 2 "Connector_USB:USB_B_Amphenol_MUSB-D511_Vertical_Rugged" H 1850 7050 50  0001 C CNN
+F 3 " ~" H 1850 7050 50  0001 C CNN
+	1    1700 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 60886291
+P 1700 7500
+F 0 "#PWR0104" H 1700 7250 50  0001 C CNN
+F 1 "GND" H 1705 7327 50  0000 C CNN
+F 2 "" H 1700 7500 50  0001 C CNN
+F 3 "" H 1700 7500 50  0001 C CNN
+	1    1700 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR052
+U 1 1 610EB86E
+P 4000 7550
+F 0 "#PWR052" H 4000 7300 50  0001 C CNN
+F 1 "GND" H 4005 7377 50  0000 C CNN
+F 2 "" H 4000 7550 50  0001 C CNN
+F 3 "" H 4000 7550 50  0001 C CNN
+	1    4000 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 6650 4000 6750
+Wire Wire Line
+	3700 6650 4000 6650
+Text GLabel 3700 6650 0    50   Input ~ 0
+USB_CONN_VBUS
+Text GLabel 3600 7050 0    50   Input ~ 0
+USB_D-
+Text GLabel 4400 7050 2    50   Input ~ 0
+USB_D+
+Text GLabel 4400 7250 2    50   Input ~ 0
+USB_CONN_D+
+Text GLabel 3600 7250 0    50   Input ~ 0
+USB_CONN_D-
+$Comp
+L Power_Protection:USBLC6-2SC6 U10
+U 1 1 60D3313E
+P 4000 7150
+F 0 "U10" H 4250 7550 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 4350 6800 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4000 6650 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 4200 7500 50  0001 C CNN
+	1    4000 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J5
+U 1 1 608CDC8A
+P 5150 7250
+F 0 "J5" H 5258 7631 50  0000 C CNN
+F 1 "USB_EXT" H 5258 7540 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical_SMD_Pin1Left" H 5150 7250 50  0001 C CNN
+F 3 "~" H 5150 7250 50  0001 C CNN
+	1    5150 7250
+	1    0    0    -1  
+$EndComp
+Text GLabel 5350 7150 2    50   Input ~ 0
+USB_D-
+Text GLabel 5350 7250 2    50   Input ~ 0
+USB_D+
+Text GLabel 5350 7050 2    50   Input ~ 0
+USB_CONN_VBUS
+$Comp
+L power:GND #PWR042
+U 1 1 608F2344
+P 5850 7300
+F 0 "#PWR042" H 5850 7050 50  0001 C CNN
+F 1 "GND" H 5855 7127 50  0000 C CNN
+F 2 "" H 5850 7300 50  0001 C CNN
+F 3 "" H 5850 7300 50  0001 C CNN
+	1    5850 7300
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1600 7500 3    50   UnSpc ~ 0
+USB_CONN_SHIELD
+Text GLabel 5350 7450 2    50   UnSpc ~ 0
+USB_CONN_SHIELD
+Wire Wire Line
+	5750 7350 5750 7300
+Wire Wire Line
+	5750 7300 5850 7300
+Wire Wire Line
+	5350 7350 5750 7350
+$Comp
+L Connector:TestPoint_Small TP18
+U 1 1 609BEBFB
+P 1450 1600
+F 0 "TP18" H 1498 1646 50  0000 L CNN
+F 1 "TP_BUCK_EN" H 1498 1555 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1650 1600 50  0001 C CNN
+F 3 "~" H 1650 1600 50  0001 C CNN
+	1    1450 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 1750 1450 1750
+Wire Wire Line
+	1450 1750 1450 1600
+Connection ~ 1450 1750
+Wire Wire Line
+	1450 1750 1650 1750
+$Comp
+L Connector:TestPoint_Small TP19
+U 1 1 609FA825
+P 4850 4650
+F 0 "TP19" V 4950 4650 50  0000 C CNN
+F 1 "TP_PWR_GND2" V 4850 4350 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5050 4650 50  0001 C CNN
+F 3 "~" H 5050 4650 50  0001 C CNN
+	1    4850 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR046
+U 1 1 609FB4B0
+P 4850 4750
+F 0 "#PWR046" H 4850 4500 50  0001 C CNN
+F 1 "GND" H 4855 4577 50  0000 C CNN
+F 2 "" H 4850 4750 50  0001 C CNN
+F 3 "" H 4850 4750 50  0001 C CNN
+	1    4850 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4750 4850 4650
+$Comp
+L Connector:TestPoint_Small TP20
+U 1 1 60A2BFBC
+P 4900 2900
+F 0 "TP20" V 5000 2900 50  0000 C CNN
+F 1 "TP_PWR_GND1" V 4900 2600 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5100 2900 50  0001 C CNN
+F 3 "~" H 5100 2900 50  0001 C CNN
+	1    4900 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR047
+U 1 1 60A2BFC2
+P 4900 3000
+F 0 "#PWR047" H 4900 2750 50  0001 C CNN
+F 1 "GND" H 4905 2827 50  0000 C CNN
+F 2 "" H 4900 3000 50  0001 C CNN
+F 3 "" H 4900 3000 50  0001 C CNN
+	1    4900 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3000 4900 2900
+$Comp
+L Connector:TestPoint_Small TP21
+U 1 1 60A437CC
+P 3450 1300
+F 0 "TP21" H 3498 1346 50  0000 L CNN
+F 1 "TP_BUCK_IN" H 3498 1255 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3650 1300 50  0001 C CNN
+F 3 "~" H 3650 1300 50  0001 C CNN
+	1    3450 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1050 3450 1300
+Connection ~ 3450 1050
+Wire Wire Line
+	3450 1050 3050 1050
+Wire Wire Line
+	2050 1350 2050 1400
+Wire Wire Line
+	2050 1400 3050 1400
+Wire Wire Line
+	3050 1250 3050 1400
+Connection ~ 2050 1400
 $EndSCHEMATC
