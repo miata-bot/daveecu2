@@ -1908,9 +1908,9 @@ $EndComp
 Wire Wire Line
 	9100 1300 9400 1300
 Text GLabel 10200 900  2    50   Input ~ 0
-HSE_OUT
+LSE_OUT
 Text GLabel 10200 1050 2    50   Input ~ 0
-HSE_IN
+LSE_IN
 $Comp
 L Device:R_Small R48
 U 1 1 60A215DA
@@ -2707,7 +2707,7 @@ Wire Wire Line
 	5650 950  5650 1250
 Connection ~ 5350 950 
 Wire Wire Line
-	5650 950  5850 950 
+	5650 950  5800 950 
 Connection ~ 5650 950 
 Text GLabel 6050 950  2    50   Input ~ 0
 VREG
@@ -2810,8 +2810,6 @@ $EndComp
 Connection ~ 4850 1550
 Wire Wire Line
 	4350 950  4850 950 
-Wire Wire Line
-	5500 3400 5800 3400
 $Comp
 L Device:C_Small C?
 U 1 1 61BA45A9
@@ -2837,26 +2835,6 @@ Wire Wire Line
 Wire Wire Line
 	5850 3800 5500 3800
 Connection ~ 5500 3800
-$Comp
-L Connector:TestPoint_Small TP?
-U 1 1 61BA45B5
-P 5850 3200
-AR Path="/5F2C75FB/61BA45B5" Ref="TP?"  Part="1" 
-AR Path="/608F155A/61BA45B5" Ref="TP22"  Part="1" 
-F 0 "TP22" H 5898 3246 50  0000 L CNN
-F 1 "TP_VPROT" H 5898 3155 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6050 3200 50  0001 C CNN
-F 3 "~" H 6050 3200 50  0001 C CNN
-	1    5850 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5850 3200 5800 3200
-Wire Wire Line
-	5800 3200 5800 3400
-Connection ~ 5800 3400
-Wire Wire Line
-	5800 3400 5850 3400
 $Comp
 L power:GND #PWR?
 U 1 1 61BA45BF
@@ -2915,4 +2893,22 @@ F 3 "" H 4700 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4700 3800
+Wire Wire Line
+	5500 3400 5850 3400
+Wire Wire Line
+	5800 1100 5800 950 
+Connection ~ 5800 950 
+Wire Wire Line
+	5800 950  5850 950 
+$Comp
+L Connector:TestPoint_Small TP22
+U 1 1 609C74ED
+P 5800 1100
+F 0 "TP22" H 5848 1146 50  0000 L CNN
+F 1 "TP_REG_IN" H 5848 1055 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6000 1100 50  0001 C CNN
+F 3 "~" H 6000 1100 50  0001 C CNN
+	1    5800 1100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
