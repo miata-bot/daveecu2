@@ -174,8 +174,8 @@ L Device:D D?
 U 1 1 61A39D1E
 P 7050 4350
 AR Path="/5EF79CE0/61A39D1E" Ref="D?"  Part="1" 
-AR Path="/5EF927DD/61A39D1E" Ref="D?"  Part="1" 
-F 0 "D?" V 7100 4150 50  0000 L CNN
+AR Path="/5EF927DD/61A39D1E" Ref="D1"  Part="1" 
+F 0 "D1" V 7100 4150 50  0000 L CNN
 F 1 "1n41001" V 7000 3900 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-123" H 7050 4350 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/lcsc/1810181722_Shandong-Jingdao-Microelectronics-1N4001W_C162732.pdf" H 7050 4350 50  0001 C CNN
