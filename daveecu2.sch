@@ -77,13 +77,16 @@ F18 "MCU-CRNK" I L 4050 5550 50
 F19 "MCU-FLEX" I L 4050 5650 50 
 F20 "MCU-CLUTCH" I L 4050 5750 50 
 F21 "FLEX-IN" I R 5250 5650 50 
-F22 "AC-IN" I R 5250 5850 50 
+F22 "AC-IN" I R 5250 5250 50 
 F23 "MCU-AC" I L 4050 5850 50 
-F24 "MCU-EXT-MAP" I L 4050 6350 50 
-F25 "MCU-ANALOG-1" I L 4050 5950 50 
-F26 "MCU-ANALOG-2" I L 4050 6050 50 
-F27 "MCU-ANALOG-3" I L 4050 6150 50 
-F28 "MCU-ANALOG-4" I L 4050 6250 50 
+F24 "MCU-ANALOG-1" I L 4050 5950 50 
+F25 "MCU-ANALOG-2" I L 4050 6050 50 
+F26 "MCU-ANALOG-3" I L 4050 6150 50 
+F27 "MCU-ANALOG-4" I L 4050 6250 50 
+F28 "ANALOG-3-IN" I R 5250 6600 50 
+F29 "ANALOG-4-IN" I R 5250 6700 50 
+F30 "ANALOG-1-IN" I R 5250 6400 50 
+F31 "ANALOG-2-IN" I R 5250 6500 50 
 $EndSheet
 $Sheet
 S 4050 1550 1150 550 
@@ -118,13 +121,13 @@ Wire Wire Line
 	4050 1050 3050 1050
 Text GLabel 9200 1450 0    50   Input ~ 0
 12v-SW
-Text GLabel 10550 1050 2    50   Output ~ 0
-INJ-1
 Text GLabel 10550 1150 2    50   Output ~ 0
+INJ-1
+Text GLabel 10550 1050 2    50   Output ~ 0
 INJ-2
-Text GLabel 10550 850  2    50   Output ~ 0
-INJ-3
 Text GLabel 10550 950  2    50   Output ~ 0
+INJ-3
+Text GLabel 10550 850  2    50   Output ~ 0
 INJ-4
 Text GLabel 5200 1750 2    50   Output ~ 0
 INJ-1
@@ -179,65 +182,32 @@ Wire Wire Line
 Wire Wire Line
 	10300 1250 10550 1250
 Wire Wire Line
-	9200 1550 9350 1550
-Text GLabel 10550 1350 2    50   Output ~ 0
-IGN-4
-Text GLabel 10550 1250 2    50   Output ~ 0
-IGN-3
-Wire Wire Line
 	10550 1150 10250 1150
-Text GLabel 10650 3100 2    50   Output ~ 0
-FAN
-Text GLabel 10650 3200 2    50   Output ~ 0
-TACH
-Text GLabel 10650 3000 2    50   Output ~ 0
-IDLE
 Text GLabel 10650 2900 2    50   Output ~ 0
+FAN
+Text GLabel 10650 2800 2    50   Output ~ 0
+TACH
+Text GLabel 10250 3400 3    50   Output ~ 0
+IDLE
+Text GLabel 10350 3400 3    50   Output ~ 0
 BOOST
-Text GLabel 9300 2600 0    50   Input ~ 0
-IAT
-Text GLabel 9300 2700 0    50   Input ~ 0
-CLT
-Text GLabel 9300 2800 0    50   Input ~ 0
-TPS
 Text GLabel 9300 2900 0    50   Input ~ 0
-O2
+IAT
 Wire Wire Line
 	10200 1050 10550 1050
 Wire Wire Line
 	10150 950  10550 950 
 Wire Wire Line
 	10550 850  10100 850 
-$Comp
-L speeduino_connector_automotive:Delphi_Sicma_24 J1
-U 1 1 60B10A81
-P 9900 1150
-F 0 "J1" H 9900 1450 50  0000 C CNN
-F 1 "CONN_BLACK" H 10600 600 50  0000 C CNN
-F 2 "speeduino_connector_automotive:Delphi_Sicma_24_Black" H 9900 1150 50  0001 C CNN
-F 3 "" H 9900 1150 50  0001 C CNN
-	1    9900 1150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10550 3200 10650 3200
-Wire Wire Line
-	10500 3100 10650 3100
 Wire Wire Line
 	10450 3000 10650 3000
 Wire Wire Line
 	10400 2900 10650 2900
-Wire Wire Line
-	10650 2800 10350 2800
-Wire Wire Line
-	10300 2700 10650 2700
-Wire Wire Line
-	10650 2500 10200 2500
-Text GLabel 9300 3200 0    50   Input ~ 0
+Text GLabel 9300 2500 0    50   Input ~ 0
 CRANK
-Text GLabel 9300 3100 0    50   Input ~ 0
+Text GLabel 9300 2600 0    50   Input ~ 0
 CAM
-Text GLabel 9300 3000 0    50   Input ~ 0
+Text GLabel 9300 3100 0    50   Input ~ 0
 CLUTCH
 Wire Wire Line
 	9300 3000 9550 3000
@@ -253,18 +223,16 @@ Wire Wire Line
 	9300 2700 9700 2700
 Wire Wire Line
 	9750 2600 9300 2600
-Text GLabel 9850 3400 3    50   Output ~ 0
+Text GLabel 10650 3000 2    50   Output ~ 0
 FP
-Text GLabel 9200 1550 0    50   Input ~ 0
+Text GLabel 9200 850  0    50   Input ~ 0
 VBAT
 Wire Wire Line
 	9200 1450 9400 1450
-Text GLabel 9200 850  0    50   Input ~ 0
+Text GLabel 9200 950  0    50   Input ~ 0
 VPROT
 Wire Wire Line
 	9200 850  9700 850 
-Text GLabel 9550 1750 3    50   Input ~ 0
-ST_SIG
 Text GLabel 5250 6100 2    50   Input ~ 0
 VBAT
 Text GLabel 5250 6000 2    50   Input ~ 0
@@ -378,9 +346,9 @@ Wire Wire Line
 Connection ~ 9400 5000
 Wire Wire Line
 	9400 5000 9400 4800
-Text GLabel 9650 3400 3    50   BiDi ~ 0
+Text GLabel 10650 2700 2    50   BiDi ~ 0
 CANH
-Text GLabel 9750 3400 3    50   BiDi ~ 0
+Text GLabel 10650 2600 2    50   BiDi ~ 0
 CANL
 Text GLabel 1400 1250 0    50   BiDi ~ 0
 CANH
@@ -389,121 +357,27 @@ CANL
 Text GLabel 10650 2500 2    50   Input ~ 0
 FLEX
 $Comp
-L speeduino_connector_automotive:Delphi_Sicma_24 J2
-U 1 1 60B1ECF8
-P 10000 2800
-F 0 "J2" H 10000 3100 50  0000 C CNN
-F 1 "CONN_GREY" H 10600 2250 50  0000 C CNN
-F 2 "speeduino_connector_automotive:Delphi_Sicma_24_Grey" H 10000 2800 50  0001 C CNN
-F 3 "" H 10000 2800 50  0001 C CNN
-	1    10000 2800
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0101
 U 1 1 609457BA
-P 10250 1900
-F 0 "#PWR0101" H 10250 1650 50  0001 C CNN
-F 1 "GND" H 10255 1727 50  0000 C CNN
-F 2 "" H 10250 1900 50  0001 C CNN
-F 3 "" H 10250 1900 50  0001 C CNN
-	1    10250 1900
+P 9550 1900
+F 0 "#PWR0101" H 9550 1650 50  0001 C CNN
+F 1 "GND" H 9555 1727 50  0000 C CNN
+F 2 "" H 9550 1900 50  0001 C CNN
+F 3 "" H 9550 1900 50  0001 C CNN
+	1    9550 1900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9650 1800 9650 1750
-Wire Wire Line
-	9650 1800 9750 1800
-Wire Wire Line
-	10150 1800 10150 1750
-Wire Wire Line
-	10050 1750 10050 1800
-Connection ~ 10050 1800
-Wire Wire Line
-	10050 1800 10150 1800
-Wire Wire Line
-	9950 1750 9950 1800
-Connection ~ 9950 1800
-Wire Wire Line
-	9950 1800 10050 1800
-Wire Wire Line
-	9850 1750 9850 1800
-Connection ~ 9850 1800
-Wire Wire Line
-	9850 1800 9950 1800
-Wire Wire Line
-	9750 1750 9750 1800
-Connection ~ 9750 1800
-Wire Wire Line
-	9750 1800 9850 1800
 $Comp
 L power:GND #PWR0102
 U 1 1 6095B1AB
-P 10350 3500
-F 0 "#PWR0102" H 10350 3250 50  0001 C CNN
-F 1 "GND" H 10355 3327 50  0000 C CNN
-F 2 "" H 10350 3500 50  0001 C CNN
-F 3 "" H 10350 3500 50  0001 C CNN
-	1    10350 3500
+P 10100 3800
+F 0 "#PWR0102" H 10100 3550 50  0001 C CNN
+F 1 "GND" H 10105 3627 50  0000 C CNN
+F 2 "" H 10100 3800 50  0001 C CNN
+F 3 "" H 10100 3800 50  0001 C CNN
+	1    10100 3800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10350 3400 10350 3450
-Connection ~ 10350 3450
-Wire Wire Line
-	10350 3450 10350 3500
-Wire Wire Line
-	10250 3400 10250 3450
-Connection ~ 10250 3450
-Wire Wire Line
-	10250 3450 10350 3450
-Wire Wire Line
-	10150 3400 10150 3450
-Connection ~ 10150 3450
-Wire Wire Line
-	10150 3450 10250 3450
-Wire Wire Line
-	10050 3400 10050 3450
-Connection ~ 10050 3450
-Wire Wire Line
-	10050 3450 10150 3450
-Wire Wire Line
-	9950 3400 9950 3450
-Wire Wire Line
-	9950 3450 10050 3450
-$Comp
-L power:GND #PWR0103
-U 1 1 6096E735
-P 10850 2600
-F 0 "#PWR0103" H 10850 2350 50  0001 C CNN
-F 1 "GND" H 10855 2427 50  0000 C CNN
-F 2 "" H 10850 2600 50  0001 C CNN
-F 3 "" H 10850 2600 50  0001 C CNN
-	1    10850 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10250 2600 10650 2600
-Wire Wire Line
-	10650 2700 10650 2600
-Connection ~ 10650 2600
-Wire Wire Line
-	10650 2600 10850 2600
-Wire Wire Line
-	10650 2800 10650 2700
-Connection ~ 10650 2700
-Text GLabel 10550 1450 2    50   Output ~ 0
-IGN-1
-Text GLabel 10550 1550 2    50   Output ~ 0
-IGN-2
-Wire Wire Line
-	10150 1800 10250 1800
-Wire Wire Line
-	10250 1800 10250 1750
-Connection ~ 10150 1800
-Wire Wire Line
-	10250 1900 10250 1800
-Connection ~ 10250 1800
 Wire Wire Line
 	3050 5850 4050 5850
 Wire Wire Line
@@ -589,10 +463,7 @@ F41 "MCU-ANALOG-2" I R 3050 6050 50
 F42 "MCU-ANALOG-3" I R 3050 6150 50 
 F43 "MCU-ANALOG-4" I R 3050 6250 50 
 F44 "12v-SW" I L 1400 1150 50 
-F45 "MCU-EXT-MAP" I R 3050 6350 50 
 $EndSheet
-Wire Wire Line
-	3050 6350 4050 6350
 Text GLabel 5200 3300 2    50   Input ~ 0
 12v-SW
 Wire Wire Line
@@ -615,4 +486,172 @@ Wire Notes Line
 	1400 6750 2200 6750
 Wire Notes Line
 	2200 6750 2200 7600
+Text GLabel 5250 6400 2    50   Input ~ 0
+A1
+Text GLabel 5250 6500 2    50   Input ~ 0
+A2
+Text GLabel 5250 6600 2    50   Input ~ 0
+A3
+Text GLabel 5250 6700 2    50   Input ~ 0
+A4
+Text GLabel 10250 1750 3    50   Input ~ 0
+A1
+Text GLabel 10150 1750 3    50   Input ~ 0
+A2
+Text GLabel 10050 1750 3    50   Input ~ 0
+A3
+Text GLabel 9950 1750 3    50   Input ~ 0
+A4
+Wire Wire Line
+	9550 1750 9550 1850
+Text GLabel 5200 3750 2    50   Output ~ 0
+VVT
+Text GLabel 5200 3650 2    50   Output ~ 0
+HC3
+Text GLabel 5200 3550 2    50   Output ~ 0
+HC2
+Text GLabel 5200 3450 2    50   Output ~ 0
+HC1
+Text GLabel 9850 3400 3    50   Output ~ 0
+VVT
+Text GLabel 9750 3400 3    50   Output ~ 0
+HC3
+Text GLabel 9650 3400 3    50   Output ~ 0
+HC2
+Text GLabel 9950 3400 3    50   Output ~ 0
+HC1
+Wire Wire Line
+	9550 1850 9650 1850
+Wire Wire Line
+	9850 1850 9850 1750
+Connection ~ 9550 1850
+Wire Wire Line
+	9550 1850 9550 1900
+Wire Wire Line
+	9750 1750 9750 1850
+Connection ~ 9750 1850
+Wire Wire Line
+	9750 1850 9850 1850
+Wire Wire Line
+	9650 1750 9650 1850
+Connection ~ 9650 1850
+Wire Wire Line
+	9650 1850 9750 1850
+Text GLabel 10550 1450 2    50   Output ~ 0
+IGN-2
+Text GLabel 10550 1550 2    50   Output ~ 0
+IGN-1
+Text GLabel 10550 1250 2    50   Output ~ 0
+IGN-4
+Text GLabel 10550 1350 2    50   Output ~ 0
+IGN-3
+Text GLabel 5250 5250 2    50   Input ~ 0
+AC
+Text GLabel 9300 3200 0    50   Input ~ 0
+AC
+Wire Wire Line
+	9300 2500 9800 2500
+Wire Wire Line
+	10050 3400 10050 3550
+Wire Wire Line
+	10050 3550 10100 3550
+Wire Wire Line
+	10100 3550 10100 3800
+Wire Wire Line
+	10100 3550 10150 3550
+Wire Wire Line
+	10150 3550 10150 3400
+Connection ~ 10100 3550
+$Comp
+L speeduino_connector_automotive:Delphi_Sicma_24 J2
+U 1 1 60B1ECF8
+P 10000 2800
+F 0 "J2" H 10000 3100 50  0000 C CNN
+F 1 "CONN_GREY" H 10600 2250 50  0000 C CNN
+F 2 "speeduino_connector_automotive:Delphi_Sicma_24_Grey" H 10000 2800 50  0001 C CNN
+F 3 "" H 10000 2800 50  0001 C CNN
+	1    10000 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 2500 10200 2500
+Wire Wire Line
+	10650 2800 10350 2800
+Wire Wire Line
+	10250 2600 10650 2600
+Wire Wire Line
+	10300 2700 10650 2700
+$Comp
+L power:GND #PWR0103
+U 1 1 60AF1557
+P 10950 3150
+F 0 "#PWR0103" H 10950 2900 50  0001 C CNN
+F 1 "GND" H 10955 2977 50  0000 C CNN
+F 2 "" H 10950 3150 50  0001 C CNN
+F 3 "" H 10950 3150 50  0001 C CNN
+	1    10950 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 3100 10950 3150
+Wire Wire Line
+	10500 3100 10750 3100
+Wire Wire Line
+	10750 3200 10750 3100
+Wire Wire Line
+	10550 3200 10750 3200
+Connection ~ 10750 3100
+Wire Wire Line
+	10750 3100 10950 3100
+Text GLabel 9300 2700 0    50   Input ~ 0
+O2
+Text GLabel 9300 2800 0    50   Input ~ 0
+CLT
+Text GLabel 9300 3000 0    50   Input ~ 0
+TPS
+Wire Wire Line
+	9200 950  9650 950 
+$Comp
+L speeduino_connector_automotive:Delphi_Sicma_24 J1
+U 1 1 60B10A81
+P 9900 1150
+F 0 "J1" H 9900 1450 50  0000 C CNN
+F 1 "CONN_BLACK" H 10600 600 50  0000 C CNN
+F 2 "speeduino_connector_automotive:Delphi_Sicma_24_Black" H 9900 1150 50  0001 C CNN
+F 3 "" H 9900 1150 50  0001 C CNN
+	1    9900 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 60BD53F4
+P 8900 1150
+F 0 "#PWR0109" H 8900 900 50  0001 C CNN
+F 1 "GND" H 8905 977 50  0000 C CNN
+F 2 "" H 8900 1150 50  0001 C CNN
+F 3 "" H 8900 1150 50  0001 C CNN
+	1    8900 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 1050 9300 1050
+Wire Wire Line
+	8900 1050 8900 1150
+Wire Wire Line
+	9550 1150 9300 1150
+Wire Wire Line
+	9300 1150 9300 1050
+Connection ~ 9300 1050
+Wire Wire Line
+	9300 1050 8900 1050
+Wire Wire Line
+	9500 1250 9300 1250
+Wire Wire Line
+	9300 1250 9300 1150
+Connection ~ 9300 1150
+Wire Wire Line
+	9450 1350 9300 1350
+Wire Wire Line
+	9300 1350 9300 1250
+Connection ~ 9300 1250
 $EndSCHEMATC

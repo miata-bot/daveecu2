@@ -1664,8 +1664,6 @@ Text GLabel 8200 7150 0    50   Input ~ 0
 UART7_RX
 Text GLabel 8200 7250 0    50   Output ~ 0
 UART7_TX
-Text HLabel 10600 7050 2    50   Input ~ 0
-MCU-EXT-MAP
 Text HLabel 10600 6150 2    50   Input ~ 0
 MCU-AC
 $Comp
@@ -1877,9 +1875,9 @@ Text GLabel 10600 8050 2    50   Output ~ 0
 LSE_OUT
 Text HLabel 10600 9550 2    50   Input ~ 0
 MCU-PWM1
-Text HLabel 8200 8750 0    50   Input ~ 0
-MCU-PWM2
 Text HLabel 8200 8850 0    50   Input ~ 0
+MCU-PWM2
+Text HLabel 8200 8750 0    50   Input ~ 0
 MCU-PWM3
 $Comp
 L Device:Crystal Y2
@@ -2072,17 +2070,6 @@ F 3 "~" H 15800 4750 50  0001 C CNN
 	1    15800 4750
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:+3.3V #PWR0109
-U 1 1 60D55F7E
-P 15050 4400
-F 0 "#PWR0109" H 15050 4250 50  0001 C CNN
-F 1 "+3.3V" H 15065 4573 50  0000 C CNN
-F 2 "" H 15050 4400 50  0001 C CNN
-F 3 "" H 15050 4400 50  0001 C CNN
-	1    15050 4400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	15050 4400 15050 4550
 Wire Wire Line
@@ -2102,8 +2089,6 @@ Wire Wire Line
 Connection ~ 15550 4550
 Wire Wire Line
 	15550 4550 15800 4550
-Text GLabel 14900 5650 2    50   UnSpc ~ 0
-USB_CONN_SHIELD
 $Comp
 L Diode:ESD9B3.3ST5G D22
 U 1 1 60DE7EC4
@@ -2911,4 +2896,7 @@ F 3 "~" H 6000 1100 50  0001 C CNN
 	1    5800 1100
 	1    0    0    -1  
 $EndComp
+Text GLabel 15050 4400 1    50   Output ~ 0
+SDIO_VDD
+NoConn ~ 14900 5650
 $EndSCHEMATC

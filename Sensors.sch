@@ -131,8 +131,8 @@ Wire Wire Line
 	1750 1500 1850 1500
 Text GLabel 6450 7450 0    50   Input ~ 0
 ADC-CLAMP-1
-Text GLabel 2050 3350 1    50   Input ~ 0
-ADC-CLAMP-1
+Text GLabel 1850 3300 1    50   Input ~ 0
+ADC-CLAMP-12
 Wire Wire Line
 	1850 1250 1850 1500
 Connection ~ 1850 1500
@@ -177,7 +177,7 @@ Wire Wire Line
 Wire Wire Line
 	4300 1500 4400 1500
 Text GLabel 9050 3500 0    50   Input ~ 0
-ADC-CLAMP-2
+ADC-CLAMP-7
 Wire Wire Line
 	4400 1250 4400 1500
 Connection ~ 4400 1500
@@ -213,7 +213,7 @@ Wire Wire Line
 Wire Wire Line
 	6850 1500 6950 1500
 Text GLabel 1850 1250 1    50   Input ~ 0
-ADC-CLAMP-3
+ADC-CLAMP-13
 Wire Wire Line
 	6950 1250 6950 1500
 Connection ~ 6950 1500
@@ -249,7 +249,7 @@ Wire Wire Line
 Wire Wire Line
 	9400 1500 9500 1500
 Text GLabel 4400 1250 1    50   Input ~ 0
-ADC-CLAMP-4
+ADC-CLAMP-10
 Wire Wire Line
 	9500 1250 9500 1500
 Connection ~ 9500 1500
@@ -302,7 +302,7 @@ $EndComp
 Wire Wire Line
 	1750 3550 1850 3550
 Text GLabel 6950 1250 1    50   Input ~ 0
-ADC-CLAMP-5
+ADC-CLAMP-14
 Wire Wire Line
 	1850 3300 1850 3550
 Connection ~ 1850 3550
@@ -326,8 +326,6 @@ Text HLabel 6100 4050 0    50   Input ~ 0
 VPROT
 Text HLabel 6450 3750 0    50   Input ~ 0
 CAM-IN
-Text GLabel 7050 5100 2    50   Input ~ 0
-ADC-CLAMP-9
 Text HLabel 7450 3750 2    50   Input ~ 0
 MCU-CAM
 Text HLabel 7450 3300 2    50   Input ~ 0
@@ -995,7 +993,7 @@ F 1 "TP_CAM" H 7600 3600 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7550 3600 50  0001 C CNN
 F 3 "~" H 7550 3600 50  0001 C CNN
 	1    7350 3600
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	7350 3600 7350 3750
@@ -1577,7 +1575,7 @@ $EndComp
 Wire Wire Line
 	4600 3700 4600 3750
 Text GLabel 4550 3400 0    50   Input ~ 0
-ADC-CLAMP-6
+ADC-CLAMP-9
 Text HLabel 4900 3200 2    50   Input ~ 0
 MCU-MAP
 Wire Wire Line
@@ -1622,8 +1620,6 @@ F 3 "~" H 4850 3400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4650 3400 4600 3400
-Text HLabel 4900 3000 2    50   Input ~ 0
-MCU-EXT-MAP
 $Comp
 L Device:C C?
 U 1 1 609F3B1B
@@ -1697,10 +1693,6 @@ Wire Wire Line
 	4900 3200 4600 3200
 Connection ~ 4600 3200
 Wire Wire Line
-	4900 3000 4600 3000
-Wire Wire Line
-	4600 3000 4600 3200
-Wire Wire Line
 	3400 2700 3700 2700
 Wire Wire Line
 	3700 2700 3700 2800
@@ -1718,37 +1710,37 @@ Wire Wire Line
 	3150 3800 3150 3650
 Connection ~ 3300 3800
 Text GLabel 7100 4250 0    50   Input ~ 0
-ADC-CLAMP-7
+ADC-CLAMP-6
 Wire Wire Line
 	7050 5100 7000 5100
 Wire Wire Line
 	7000 5100 7000 5400
 Connection ~ 7000 5550
 Text GLabel 9800 5000 2    50   Input ~ 0
-ADC-CLAMP-11
+ADC-CLAMP-2
 Wire Wire Line
 	9800 5000 9700 5000
 Wire Wire Line
 	9700 5000 9700 5350
 Connection ~ 9700 5500
 Text GLabel 2100 7200 2    50   Input ~ 0
-ADC-CLAMP-12
+ADC-CLAMP-3
 Wire Wire Line
 	2100 7200 2000 7200
 Wire Wire Line
 	2000 7200 2000 7450
 Connection ~ 2000 7600
 Text GLabel 4700 7150 2    50   Input ~ 0
-ADC-CLAMP-13
+ADC-CLAMP-4
 Wire Wire Line
 	4700 7150 4600 7150
 Wire Wire Line
 	4600 7150 4600 7400
 Connection ~ 4600 7550
 Text GLabel 9500 1250 1    50   Input ~ 0
-ADC-CLAMP-6
+ADC-CLAMP-11
 Text GLabel 7050 2750 0    50   Input ~ 0
-ADC-CLAMP-14
+ADC-CLAMP-5
 Wire Wire Line
 	2100 7450 2000 7450
 Connection ~ 2000 7450
@@ -1793,4 +1785,6 @@ Text HLabel 8900 5500 0    50   Input ~ 0
 ANALOG-2-IN
 Wire Wire Line
 	8900 5500 9100 5500
+Text GLabel 7050 5100 2    50   Input ~ 0
+ADC-CLAMP-1
 $EndSCHEMATC

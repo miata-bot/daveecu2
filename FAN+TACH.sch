@@ -13,37 +13,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 3900 2850 2    50   Output ~ 0
+Text HLabel 3300 2850 2    50   Output ~ 0
 TACH-OUT
-$Comp
-L Device:Jumper JP1
-U 1 1 5EFA7131
-P 3350 2850
-F 0 "JP1" H 3350 3114 50  0000 C CNN
-F 1 "Jumper" H 3350 3023 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3350 2850 50  0001 C CNN
-F 3 "~" H 3350 2850 50  0001 C CNN
-	1    3350 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint_Small TP1
-U 1 1 60D91417
-P 3700 3050
-F 0 "TP1" H 3748 3096 50  0000 L CNN
-F 1 "TP_TACH" H 3748 3005 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3900 3050 50  0001 C CNN
-F 3 "~" H 3900 3050 50  0001 C CNN
-	1    3700 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3700 3050 3700 2850
-Wire Wire Line
-	3650 2850 3700 2850
-Connection ~ 3700 2850
-Wire Wire Line
-	3700 2850 3900 2850
 $Comp
 L Transistor_FET:2N7002 Q2
 U 1 1 61AFCA1D
@@ -118,8 +89,6 @@ F 3 "" H 2700 3350 50  0001 C CNN
 	1    2700 3350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2700 2850 3050 2850
 Connection ~ 2700 2850
 Text HLabel 2400 3150 0    50   Input ~ 0
 MCU-TACH
@@ -157,4 +126,6 @@ F 3 "" H 4950 4900 50  0001 C CNN
 	1    4950 4900
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2700 2850 3300 2850
 $EndSCHEMATC
