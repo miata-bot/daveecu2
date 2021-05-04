@@ -9,10 +9,10 @@
 * 1 each CAM and Crank input
 * 1 wire Idle
 * PWM boost
-* [PLANNED] AC control
-* [PLANNED] Additional input/outputs
+* AC control
+* 4 additional high current outputs
+* SD card for logginglogging
 * [PLANNED] RTC w/ battery backup
-* [PLANNED] SD card logging
 
 ## Schematic TODO
 
