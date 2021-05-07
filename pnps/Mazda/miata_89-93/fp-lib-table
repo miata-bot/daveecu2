@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name speeduino_connector_automotive)(type KiCad)(uri ${KIPRJMOD_ROOT}/kicad-parts/Connector_Automotive/Connector_Automotive.pretty)(options "")(descr ""))
+)
