@@ -455,4 +455,8 @@ Text HLabel 3050 1600 0    50   Input ~ 0
 MCU-VVT
 Text HLabel 3050 1900 0    50   Input ~ 0
 MCU-PWM1
+NoConn ~ 4100 4400
+NoConn ~ 4100 4700
+NoConn ~ 4100 1750
+NoConn ~ 4100 2050
 $EndSCHEMATC

@@ -1787,4 +1787,7 @@ Wire Wire Line
 	8900 5500 9100 5500
 Text GLabel 7050 5100 2    50   Input ~ 0
 ADC-CLAMP-1
+Text GLabel 7250 8250 2    50   Input ~ 0
+ADC-CLAMP-8
+NoConn ~ 7250 8250
 $EndSCHEMATC

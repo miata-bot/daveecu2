@@ -4,4 +4,5 @@
   (lib (name speeduino_misc)(type Legacy)(uri ${KIPRJMOD}/kicad-parts/Misc/Misc.lib)(options "")(descr ""))
   (lib (name mll1200s)(type Legacy)(uri ${KIPRJMOD}/MLL1200S.lib)(options "")(descr ""))
   (lib (name cone-kicad-parts)(type Legacy)(uri ${KIPRJMOD}/cone-kicad-parts.lib)(options "")(descr ""))
+  (lib (name TC2030-IDC-NL)(type Legacy)(uri ${KIPRJMOD}/TC2030-IDC-NL.lib)(options "")(descr ""))
 )

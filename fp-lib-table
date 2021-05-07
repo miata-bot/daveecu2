@@ -4,4 +4,5 @@
   (lib (name speeduino_misc)(type KiCad)(uri ${KIPRJMOD}/kicad-parts/Misc/Misc.pretty)(options "")(descr ""))
   (lib (name mll1200s)(type KiCad)(uri ${KIPRJMOD}/MLL1200S.pretty)(options "")(descr ""))
   (lib (name SensorPressure)(type KiCad)(uri ${KIPRJMOD}/Sensor_Pressure.pretty)(options "")(descr ""))
+  (lib (name TC2030-IDC-NL)(type KiCad)(uri ${KIPRJMOD}/TC2030-IDC-NL.pretty)(options "")(descr ""))
 )
